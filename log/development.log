@@ -3333,3 +3333,291 @@ Served asset /bg.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/1_2.jpg" for 127.0.0.1 at 2013-03-15 04:54:39 +0530
 Served asset /1_2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:00:36 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.2ms)
+Compiled application.css  (0ms)  (pid 22220)
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_layouts_application_html_erb__1023171919002684849_32298480 at /home/rishabh/lmw/setwet_style/app/views/layouts/application.html.erb:16)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 11ms (Views: 11.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:00:36 +0530
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:00:36 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:00:36 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:00:36 +0530
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:01:24 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+Compiled application.css  (0ms)  (pid 22220)
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_layouts_application_html_erb__1023171919002684849_32298480 at /home/rishabh/lmw/setwet_style/app/views/layouts/application.html.erb:16)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:01:24 +0530
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:01:24 +0530
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:01:24 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:01:24 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:02:18 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_layouts_application_html_erb__1023171919002684849_32298480 at /home/rishabh/lmw/setwet_style/app/views/layouts/application.html.erb:16)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:02:18 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:18 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:18 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:18 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:02:49 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_layouts_application_html_erb__1023171919002684849_32298480 at /home/rishabh/lmw/setwet_style/app/views/layouts/application.html.erb:16)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:02:49 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:49 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:49 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:49 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:02:57 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:02:58 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:58 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:58 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:02:58 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:03:33 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_layouts_application_html_erb__1023171919002684849_32334140 at /home/rishabh/lmw/setwet_style/app/views/layouts/application.html.erb:16)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:03:33 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:03:33 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:03:33 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:03:33 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:03:46 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.1ms)
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_layouts_application_html_erb__1023171919002684849_32334140 at /home/rishabh/lmw/setwet_style/app/views/layouts/application.html.erb:16)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:03:46 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:03:46 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:03:46 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:03:46 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:04:02 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html.erb within layouts/application (0.0ms)
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_layouts_application_html_erb__1023171919002684849_32334140 at /home/rishabh/lmw/setwet_style/app/views/layouts/application.html.erb:16)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 6.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:04:03 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:04:03 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:04:03 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:04:03 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:04:13 +0530
+Processing by HomesController#index as HTML
+  Rendered homes/index.html within layouts/application (1.6ms)
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_layouts_application_html_erb__4330675739681399071_19361400 at /home/rishabh/lmw/setwet_style/app/views/layouts/application.html.erb:16)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 32.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/1.png" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /1.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/2.png" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /2.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/22.png" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /22.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg_1.jpg" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /bg_1.jpg - 200 OK (3ms)
+
+
+Started GET "/assets/1_2.jpg" for 127.0.0.1 at 2013-03-15 05:04:14 +0530
+Served asset /1_2.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-15 05:06:12 +0530
+Processing by HomesController#index as HTML
+DEPRECATION WARNING: Passing a template handler in the template name is deprecated. You can simply remove the handler name or pass render :handlers => [:erb] instead. (called from _app_views_homes_index_html___34146588237454508_19764220 at /home/rishabh/lmw/setwet_style/app/views/homes/index.html:22)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered homes/index.html within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 8.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-15 05:06:12 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-15 05:06:12 +0530
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-15 05:06:12 +0530
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-15 05:06:12 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/2.png" for 127.0.0.1 at 2013-03-15 05:06:13 +0530
+Served asset /2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/1.png" for 127.0.0.1 at 2013-03-15 05:06:13 +0530
+Served asset /1.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/22.png" for 127.0.0.1 at 2013-03-15 05:06:13 +0530
+Served asset /22.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-15 05:06:13 +0530
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg_1.jpg" for 127.0.0.1 at 2013-03-15 05:06:13 +0530
+Served asset /bg_1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/1_2.jpg" for 127.0.0.1 at 2013-03-15 05:06:13 +0530
+Served asset /1_2.jpg - 304 Not Modified (0ms)
