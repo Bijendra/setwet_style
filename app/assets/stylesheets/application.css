@@ -22,7 +22,7 @@
 #page_1_slide_1 {
     position: relative;
     width:100%;
-    background:url(/assets/bg.jpg) no-repeat;
+    background:url(/assets/bg_1.jpg) no-repeat;
     min-height:780px;
 }
 
@@ -100,4 +100,53 @@
 #sitemap img {
     width: 25px;
     height: 25px;
+}
+
+.back_ground_deos {
+	background-image:url('paper.gif');
+    background-color:#cccccc;
+}
+
+.back_ground_faqs {
+	background-image:url('paper.gif');
+    background-color:#cccccc;
+}
+
+.back_ground_shop {
+	background-image:url('paper.gif');
+    background-color:#cccccc;
+}
+
+.back_ground_waxes {
+	background-image:url('bg.jpg');
+    background-color:#cccccc;
+    width: 1024px;
+    height: 768px;
+}
+
+.back_ground_gels {
+	background-image:url('paper.gif');
+    background-color:#cccccc;
+}
+
+.back_ground_style_meter {
+	background-image:url('paper.gif');
+    background-color:#cccccc;
+}
+
+.setwet_logo_position {
+    float: right;
+    padding-top: 291px;
+}
+
+.link_in_waxes {
+	text-decoration: none !important;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+.wax_link_styling {
+	
 }
