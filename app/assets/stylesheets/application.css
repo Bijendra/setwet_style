@@ -34,6 +34,14 @@
     height: 768px;
 }
 
+.back_ground_waxes_range {
+	background-image:url('setwet_wax_range.jpg');
+    background-color:#cccccc;
+    width: 1024px;
+    height: 768px;
+}
+
+
 .back_ground_gels {
 	background-image:url('paper.gif');
     background-color:#cccccc;
@@ -49,6 +57,11 @@
     padding-top: 291px;
 }
 
+.setwet_range_position {
+    float: right;
+    padding-top: 295px;
+}
+
 .link_in_waxes {
 	text-decoration: none !important;
 }
@@ -58,5 +71,5 @@ a, u {
 }
 
 .wax_link_styling {
-	
+
 }
