@@ -1,6 +1,13 @@
 <html>
 <head>
 <style type='text/css'>
+#thevideo { 
+  position: absolute; 
+  left: 75px;
+  top: 105px;
+}
+
+
 #myCarousel {
   margin-top: 40px;
   width: 535px;
@@ -34,13 +41,34 @@ if(/sexy/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('
 if(/romeo/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 6 + ')').addClass('active');}	
 document.getElementById("deo_bg").style.background= "url(/assets/deo_bg_2.jpg) no-repeat;";
 document.getElementById("myCarousel").style.display = "block";
+document.getElementById("deo_text").style.display = "none";
 document.getElementById("deo_main_div").style.display = "none";
+document.getElementById("youtube_video").style.display = "none";
 $('#myCarousel').carousel({
   interval: 3000
 });
 $('#myCarousel').carousel('cycle');
 };
 
+function start_video(){
+document.getElementById("deo_bg").style.background= "url(/assets/deo_bg_2.jpg) no-repeat;";
+document.getElementById("deo_main_div").style.display = "none";
+document.getElementById("deo_text").style.display = "none";
+document.getElementById("youtube_video").style.display = "none";
+$("#btn_cross").css("display","block");
+$("#thevideo").css("display","block");
+}
+
+function hide_video(state){
+ var div = document.getElementById("thevideo");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state == 'hide' ? 'none' : '';
+    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+    $("#btn_cross").css("display","none");
+    document.getElementById("deo_main_div").style.display = "";
+document.getElementById("deo_text").style.display = "";
+}
 
 </script>
 
@@ -85,9 +113,9 @@ $('#myCarousel').carousel('cycle');
     
     </div>
     
-    <div style='position:absolute;left:542px;top:704px;z-index:18'><a id="" class="" style="color:#1b9ad3;font-size:12px;" href="">DISCOVER THE NEW CALL OF THE COOL <br>WATCH THE SETWET NEW COOL COMMERCIAL HERE</a></div>
-    <div style="position:absolute;left:899px;top:677px;z-index:">
-    <a id="deo_romeo" class="" style="" href="javascript:void(0)" onclick="start_carousel(this.id)"><img alt="Image Alt value" style="" title="" class="" onclick="" src="http://img.youtube.com/vi/TRSJOV-mjw0/default.jpg" id="deo_video" /> </a>
+    <div id="deo_text" style='position:absolute;left:542px;top:704px;z-index:18'><a id="" class="" style="color:#1b9ad3;font-size:12px;" href="">DISCOVER THE NEW CALL OF THE COOL <br>WATCH THE SETWET NEW COOL COMMERCIAL HERE</a></div>
+    <div id="youtube_video" style="position:absolute;left:899px;top:677px;z-index:">
+    <a  class="" style="" href="javascript:void(0)" onclick="start_video()"><img alt="Image Alt value" style="" title="" class="" onclick="" src="http://img.youtube.com/vi/TRSJOV-mjw0/default.jpg" id="deo_video" /> </a>
     </div>
     
     
@@ -117,7 +145,13 @@ $('#myCarousel').carousel('cycle');
   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
-    
+
+<div id="btn_cross" style="position:absolute;left:854px;top: 86px;z-index:500; display:none">
+      <img onclick="hide_video('hide');" style="height:36px;width:37px;cursor:pointer;" src="/assets/cross-button.png" />                  
+</div>
+<div id="thevideo" class="video_container" style="display:none">
+<iframe width="793" height="579" src="http://www.youtube.com/v/XSGBVzeBUbk?hl=en_US&;version=3&autoplay=1"></iframe>
+</div>    
  
 
     <div id="links">
@@ -126,7 +160,17 @@ $('#myCarousel').carousel('cycle');
 
 </div> 	
 </body>
-
+<script>
+	
+$(function(){
+jQuery('iframe').each(function () {
+    var url = jQuery(this).attr("src").replace(new RegExp("/v/", "i"), '/embed/');
+    if (jQuery(this).attr("src").indexOf("?") > 0) {
+        jQuery(this).attr("src", url + "&amp;wmode=opaque");
+    }
+});
+});
+</script>
 
 <html>
 
