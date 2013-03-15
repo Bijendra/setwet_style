@@ -7,13 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div id="main">
 <%= yield %>
+</div>
 
 <div style="clear:both"></div>
+<% if(false) %>
 <div class="footer-display" style="padding-top:300px;">
   <%= render "layouts/footer.html.erb" %>
-</div>
-  
+</div>  
+<% end %>
 </body>
 </html>
