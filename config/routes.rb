@@ -11,6 +11,10 @@ SetwetStyle::Application.routes.draw do
   match "/faqs" => "homes#faqs"
   match "/shop" => "homes#shop"
   match "/waxes" =>"homes#waxes"
+  match "/styles" =>"homes#styles"
+  match "/style/:name" =>"homes#style_detail"
+
+  match "/wax_range" => "homes#wax_range"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

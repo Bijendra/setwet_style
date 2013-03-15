@@ -16,6 +16,15 @@ class HomesController < ApplicationController
   end
 
   def deos
+  end
+
+  def wax_range
   end 	
+
+  def styles
+  end
+
+  def style_detail
+  end
 
 end
