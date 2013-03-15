@@ -18,4 +18,10 @@ class HomesController < ApplicationController
   def deos
   end 	
 
+  def styles
+  end
+
+  def style_detail
+  end
+
 end
