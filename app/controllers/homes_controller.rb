@@ -27,4 +27,7 @@ class HomesController < ApplicationController
   def style_detail
   end
 
+  def style_meter
+  end	
+
 end
