@@ -15,6 +15,9 @@
  
  
  */
+body {
+    background: #000000;
+}
 
 #main {
     position: relative;
