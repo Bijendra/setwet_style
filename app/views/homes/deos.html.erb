@@ -32,7 +32,7 @@ if(/casanova/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeCla
 if(/macho/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 4 + ')').addClass('active');}
 if(/sexy/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 5 + ')').addClass('active');}
 if(/romeo/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 6 + ')').addClass('active');}	
-document.getElementById("deo_bg").style.background= "url(/assets/deo_bg_2.jpg)";
+document.getElementById("deo_bg").style.background= "url(/assets/deo_bg_2.jpg) no-repeat;";
 document.getElementById("myCarousel").style.display = "block";
 document.getElementById("deo_main_div").style.display = "none";
 $('#myCarousel').carousel({
@@ -61,7 +61,7 @@ $('#myCarousel').carousel('cycle');
     </div>
     <div style='position:absolute;left:722px;top:440px;z-index:5'>			<img id="deo_green" src="/assets/green.png" onclick="" class="" title="" style="height:11px;width:142px;" alt="Image Alt value"/>	
     </div>
-    <div style='position:absolute;left:872px;top:305px;z-index:4'>			<a id="setwet_home" class="" style="" href="/"> <img id="deo_setwet" src="/assets/setwet_logo.png" onclick="" class="" title="" style="width:143px;height:151px;" alt="Image Alt value"/> </a>	
+    <div style='position:absolute;left:872px;top:307px;z-index:4'>			<a id="setwet_home" class="" style="" href="/"> <img id="deo_setwet" src="/assets/setwet_logo.png" onclick="" class="" title="" style="width:143px;height:151px;" alt="Image Alt value"/> </a>	
     </div>
     <div style='position:absolute;left:425px;top:293px;z-index:11'>			<a id="img_cool" class="" style="" href="javascript:void(0)" onclick="start_carousel(this.id)" > <img id="deo_cool" src="/assets/cool.png" class="" title="" style="width:82px;height:157px;" alt="Image Alt value"/></a>	
     </div>
@@ -87,7 +87,7 @@ $('#myCarousel').carousel('cycle');
     
     <div style='position:absolute;left:542px;top:704px;z-index:18'><a id="" class="" style="color:#1b9ad3;font-size:12px;" href="">DISCOVER THE NEW CALL OF THE COOL <br>WATCH THE SETWET NEW COOL COMMERCIAL HERE</a></div>
     <div style="position:absolute;left:899px;top:677px;z-index:">
-    <img alt="Image Alt value" style="" title="" class="" onclick="" src="http://img.youtube.com/vi/TRSJOV-mjw0/default.jpg" id="deo_video">
+    <a id="deo_romeo" class="" style="" href="javascript:void(0)" onclick="start_carousel(this.id)"><img alt="Image Alt value" style="" title="" class="" onclick="" src="http://img.youtube.com/vi/TRSJOV-mjw0/default.jpg" id="deo_video" /> </a>
     </div>
     
     
