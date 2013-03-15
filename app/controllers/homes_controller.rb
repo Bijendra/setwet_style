@@ -60,4 +60,7 @@ class HomesController < ApplicationController
     end
   end
 
+  def style_meter
+  end	
+
 end

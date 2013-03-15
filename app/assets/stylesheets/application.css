@@ -10,6 +10,10 @@
  *
  *= require_self
  *= require_tree .
+
+ 
+ 
+ 
  */
 body {
     background: #000000;
@@ -61,6 +65,14 @@ body {
 #page_1_img_4 {
     position:absolute;
     top:287px;
+    right:1px;
+    width:153px;
+    height:150px;
+}
+
+#page_1_img_4_gel {
+    position:absolute;
+    top:300px;
     right:1px;
     width:153px;
     height:150px;

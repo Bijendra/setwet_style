@@ -2,10 +2,10 @@ SetwetStyle::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
+  root :to => 'homes#index'
 
-
-
-
+  
+  
   match "/gels" => "homes#gels"
   match "/deos" => "homes#deos"
   match "/faqs" => "homes#faqs"
@@ -15,6 +15,8 @@ SetwetStyle::Application.routes.draw do
   match "/style/:name" =>"homes#style_detail"
 
   match "/wax_range" => "homes#wax_range"
+  match "/style_meter" => "homes#style_meter"
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
@@ -62,7 +64,7 @@ SetwetStyle::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'homes#index'
+  
 
   # See how all your routes lay out with "rake routes"
 
