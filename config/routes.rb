@@ -14,6 +14,8 @@ SetwetStyle::Application.routes.draw do
   match "/styles" =>"homes#styles"
   match "/style/:name" =>"homes#style_detail"
 
+  match "/wax_range" => "homes#wax_range"
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
