@@ -65,7 +65,7 @@ $('.carousel-linked-nav > li > a').click(function() {
     </div>
     <div style='position:absolute;left:722px;top:440px;z-index:5'>			<img id="deo_green" src="/assets/green.png" onclick="" class="" title="" style="height:11px;width:142px;" alt="Image Alt value"/>	
     </div>
-    <div style='position:absolute;left:872px;top:305px;z-index:4'>			<a id="setwet_home" class="" style="" href=""> <img id="deo_setwet" src="/assets/setwet_logo.png" onclick="" class="" title="" style="width:143px;height:151px;" alt="Image Alt value"/> </a>	
+    <div style='position:absolute;left:872px;top:305px;z-index:4'>			<a id="setwet_home" class="" style="" href="/"> <img id="deo_setwet" src="/assets/setwet_logo.png" onclick="" class="" title="" style="width:143px;height:151px;" alt="Image Alt value"/> </a>	
     </div>
     <div style='position:absolute;left:425px;top:293px;z-index:11'>			<a id="img_cool" class="" style="" href=""> <img id="deo_cool" src="/assets/cool.png" onclick="" class="" title="" style="width:82px;height:157px;" alt="Image Alt value"/></a>	
     </div>
@@ -116,8 +116,12 @@ $('.carousel-linked-nav > li > a').click(function() {
   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
     
-    
-    
+ 
+
+    <div id="links">
+        <%= render "links" %>
+    </div> 
+
 </div> 	
 </body>
 
