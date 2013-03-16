@@ -9,7 +9,7 @@ class HomesController < ApplicationController
   def shop
   end
 
-  def waxes
+  def home
   end
 
   def gels
@@ -18,7 +18,7 @@ class HomesController < ApplicationController
   def deos
   end
 
-  def wax_range
+  def waxes
   end 	
 
   def styles

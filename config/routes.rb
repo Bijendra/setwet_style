@@ -16,6 +16,10 @@ SetwetStyle::Application.routes.draw do
 
   match "/wax_range" => "homes#wax_range"
   match "/style_meter" => "homes#style_meter"
+  match "/contact_us" => "homes#contact_us"
+  match "/sitemap" => "homes#sitemap"
+  match "/disclaimer" => "homes#disclaimer"
+  match "/thankyou" => "homes#thankyou"
 
 
   # Sample of regular route:

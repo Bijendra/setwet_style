@@ -1,17 +1,112 @@
-<html>
-  <div class="back_ground_waxes">
-    
-    <div class
-  	<div class="setwet_logo">
-      <%= image_submit_tag("setwet_logo.png", :class => "setwet_logo_position") %>
-  	</div>
 
-  	<div class="link_in_waxes" >
-  		<%= link_to "SO, GO ON,GET VERY VERY SEXY.", "#", html_options = {:class => "wax_link_styling"} %>
-    </div>
+      <div style="width:1024px;height:780px;background:url(/assets/screen5_bg.jpg) no-repeat;">
+        <a href="#">
+        <div id="red_wax_1" style='position:absolute;left:300px;top:441px;z-index:4'>     
+       
+        <img id="red_pop" src="/assets/screen5_red.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
+      
+      
+      
+      </div>
+      </a>
+      <a href="#">
+      <div id="green_wax_3" style='position:absolute;left:599px;top:440px;z-index:'>     <img id="green_pop" src="/assets/screen5_green.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
+      
+      
+      
+      </div>
+      </a>
+      <a href="#">
+      <div id="blue_wax_4" style='position:absolute;left:750px;top:357px;z-index:'>     <img id="blue_pop" src="/assets/screen5_blue.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>
+      </div>  
+      
+      
+      
+      </div>
+      <a href="#">
+        <div id="yellow_wax_2" style='position:absolute;left:459px;top:357px;z-index:13'>     <img id="yellow_pop" src="/assets/screen5_yellow.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
+        </div>
+      </a>
+      <a href="#">
+        <div style='position:absolute;left:871px;top:295px;z-index:'>     <img id="" src="/assets/setwet_logo.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
+        </div>
+      </a>
+      <div style='position:absolute;left:318px;top:396px;z-index:10'>     <div id="" class="" style="font-style:italic;" onclick="">AFTER HOURS</br> GLAXE WAX</div>  
+      
+      
+      
+      </div><div style='position:absolute;left:465.99998474121094px;top:452px;z-index:auto'>      <div id="" class="" style="" onclick="">SHOCK WAVE<br/>STYLING CLAY</div>  
+      
+      
+      
+      </div><div style='position:absolute;left:612.9999847412109px;top:393px;z-index:12'>     <div id="" class="" style="" onclick="">FREESTYLER<br/>MATT WAX</div>  
+      
+      
+      
+      </div><div style='position:absolute;left:748px;top:450px;z-index:13'>     <div id="" class="" style="" onclick="">AMOEBA FIBRE<br/> GUM</div>  
+      
+      
+      
+      </div>
+      <a href="#">
+        <div style='position:absolute;left:415px;top:673px;z-index:'>     <div id="" class="" style="" onclick="">GET THE PERFECT HAIRSTYLE WITH OUT STYLING VIDEOS
+        </div>  
+        </div>
+      </a>
+    <div style='position:absolute;left:833.9999847412109px;top:660px;z-index:11'>     <img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/> 
+      
+      
+      
+      </div>
 
-    <div id="links">
-    	<%= render "links" %>
-  	</div> 
-  <div>	
-<html>
+      <%= render "links" %>
+      <%= render "layouts/footer.html.erb" %>
+      <div id="red_popup" style='position:absolute;left:282px;top:434px;z-index:14'>     <img id="" src="/assets/screen6_red.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
+      
+      </div>
+      <div id="yellow_popup" style='position:absolute;left:432px;top:434px;z-index:14'>     <img id="" src="/assets/screen6_yellow.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
+      </div>
+      <div id="green_popup" style='position:absolute;left:579px;top:434px;z-index:14'>     <img id="" src="/assets/screen6_green.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
+      </div>
+
+      <div id="blue_popup" style='position:absolute;left:727px;top:434px;z-index:14'>     <img id="" src="/assets/screen6_blue.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
+      </div>
+      <script>
+       $(document).ready(function () {
+          $('#red_popup').hide();
+          $('#green_popup').hide();
+          $('#yellow_popup').hide();
+          $('#blue_popup').hide();
+       });
+       var hovered = false;
+
+       $('#red_wax_1').hover(function(){
+         $('#red_popup').show();
+         },
+         function(){
+           $('#red_popup').hide(); 
+         }  
+       );          
+          
+          
+       $('#green_wax_3').hover(function(){
+          $('#green_popup').show();
+          },
+         function(){
+           $('#green_popup').hide();
+       });
+       $('#yellow_wax_2').hover(function(){
+          $('#yellow_popup').show();
+          },
+         function(){
+           $('#yellow_popup').hide();
+       });
+       $('#blue_wax_4').hover(function(){
+          $('#blue_popup').show();
+          },
+         function(){
+           $('#blue_popup').hide();
+       });
+
+      </script>
+
