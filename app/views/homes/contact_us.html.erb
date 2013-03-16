@@ -1,0 +1,24 @@
+<%#= raise @contact.inspect %>
+
+<div class="contact_form">
+  <%= form_for @contact_us, :url => thankyou_url,:html => {:multipart => true} do |f| %>
+  <%= f.label :full_name, 'Full Name:' %>:
+  <%= f.text_field :full_name %><br />
+  <%= f.label :email, 'Email:' %>:
+  <%= f.text_field :email %><br />
+  <%= f.label :phone_no, 'Phone No.:' %>:
+  <%= f.text_field :phone_no %><br />
+  <%= f.label :address, 'Address:' %>:
+  <%= f.text_field :address %><br />
+  <%= f.label :country, 'Country:' %>
+  <%= f.select :country, options_for_select(["India", "Europe", "Canada", "Russia"], :selected => "India"), :class => 'genForm_dropBox' %><br/>
+  <%= f.label :issue_type, 'Issue Type:' %>
+  <%= f.select :country, options_for_select(["India", "Europe", "Canada", "Russia"], :selected => "India"), :class => 'genForm_dropBox' %><br/>
+  <%= f.label :query, 'Query:' %>
+  <%= f.text_field :query %><br />
+  <%= f.label :attachment, 'Attachments:' %>:
+  <%= f.file_field :attachment %><br />
+
+  <%= f.submit %>
+  <% end %>
+</div>
