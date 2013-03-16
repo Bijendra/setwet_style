@@ -32,9 +32,9 @@
         </div>
       </a>
       <a href="#">
-      <div style='position:absolute;left:318px;top:396px;z-index:10'>     <div id="" class="" style="font-style:italic;" onclick="">AFTER HOURS</br> GLAXE WAX</div>  
+      <div style='position:absolute;left:318px;top:396px;z-index:10'>     <div id="javascript:void(0)" class="" style="font-style:italic;" onclick="start_carousel(this.id)">AFTER HOURS</br> GLAXE WAX</div>  
       
-      
+       
       
       </div>
       </a>
@@ -119,4 +119,78 @@
        });
 
       </script>
+<!-- implement slider -->
+<html>
+<head>
 
+<style type='text/css'>
+#thevideo { 
+  position: absolute; 
+  left: 75px;
+  top: 105px;
+}
+
+
+#myCarousel {
+  /*margin-top: 40px;*/
+  position: absolute;
+  width: 535px;
+  height: 257px;
+  left: 335px;
+  top: 212px;
+}
+
+.carousel-linked-nav,
+.item img {
+  display: block; 
+  margin: 0 auto;
+}
+
+.carousel-linked-nav {
+  width: 80px;
+  margin-bottom: 20px;   
+}
+</style>
+</head>
+</html>
+
+<body>
+  <div id="myCarousel" class="carousel slide" style="display: none">
+    <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <img id="1" src="/assets/screen7_blue.png" />
+        </div>
+        <div class="item">
+          <img id="2" src="/assets/screen7_green.png" />
+        </div>
+        <div class="item">
+          <img id="3" src="/assets/screen7_yellow.png" />
+        </div>      
+        
+      </div>
+
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div>
+</body>
+
+<script type="text/javascript">
+ function start_carousel(id){
+if(/coolhead/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 1 + ')').addClass('active');}
+if(/vhold/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 2 + ')').addClass('active');}
+if(/swlook/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 3 + ')').addClass('active');}
+document.getElementById("myCarousel").style.display = "block";
+/*document.getElementById("deo_bg").style.display = "none";
++document.getElementById("deo_bg2").style.display = "block";
++document.getElementById("myCarousel").style.display = "block";
++document.getElementById("deo_text").style.display = "none";
++document.getElementById("deo_main_div").style.display = "none";
++document.getElementById("youtube_video").style.display = "none";*/
+$('#myCarousel').carousel({
+  interval: 3000
+});
+$('#myCarousel').carousel('cycle');
+};
+
+</script>

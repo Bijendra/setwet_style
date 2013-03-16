@@ -47,7 +47,22 @@ class HomesController < ApplicationController
         2 => ["/assets/std2.png", "/assets/stdwax2.png", "Description here for 2", "hp6AxDgV4rU", "/assets/glamzone.png", "name2", "short desc 2"],
         3 => ["/assets/std3.png", "/assets/stdwax3.png", "Description here for 3", "hp6AxDgV4rU", "/assets/emo.png", "name3", "short desc 3"],
         4 => ["/assets/std4.png", "/assets/stdwax4.png", "Description here for 4", "hp6AxDgV4rU", "/assets/cyclops.png", "name4", "short desc 4"]
+      },
+
+      "suave" => {       
+        1 => ["/assets/std1.png", "/assets/stdwax1.png", "Description here for 1", "hp6AxDgV4rU", "/assets/shaperon.png", "name1", "short desc 1"],
+        2 => ["/assets/std2.png", "/assets/stdwax2.png", "Description here for 2", "hp6AxDgV4rU", "/assets/glamzone.png", "name2", "short desc 2"],
+        3 => ["/assets/std3.png", "/assets/stdwax3.png", "Description here for 3", "hp6AxDgV4rU", "/assets/emo.png", "name3", "short desc 3"],
+        4 => ["/assets/std4.png", "/assets/stdwax4.png", "Description here for 4", "hp6AxDgV4rU", "/assets/cyclops.png", "name4", "short desc 4"]
+      },
+
+      "office" => {       
+        1 => ["/assets/std1.png", "/assets/stdwax1.png", "Description here for 1", "hp6AxDgV4rU", "/assets/shaperon.png", "name1", "short desc 1"],
+        2 => ["/assets/std2.png", "/assets/stdwax2.png", "Description here for 2", "hp6AxDgV4rU", "/assets/glamzone.png", "name2", "short desc 2"],
+        3 => ["/assets/std3.png", "/assets/stdwax3.png", "Description here for 3", "hp6AxDgV4rU", "/assets/emo.png", "name3", "short desc 3"],
+        4 => ["/assets/std4.png", "/assets/stdwax4.png", "Description here for 4", "hp6AxDgV4rU", "/assets/cyclops.png", "name4", "short desc 4"]
       }
+
 
     }      
 
