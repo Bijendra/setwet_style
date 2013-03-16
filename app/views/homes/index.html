@@ -8,7 +8,7 @@
   <%= render "layouts/footer.html.erb" %>
   <a href="/"><img src="/assets/setwet_logo.png" id="page_1_img_4" /></a>
 </div>
-
+<a id="link" href="http://google.com">Go NOW!!!</a>
 <script type="text/javascript">
   setTimeout(function() {
     $('#page_1_img_1').slideDown();
@@ -17,7 +17,10 @@
   setTimeout(function() {
     window.scrollTo(0,780)
   }, 5000); 
-  
+
+  setTimeout(function() {
+  location.href = "/waxes";
+  }, 7000);
 </script>
 
 <!-- <a href="/"><img src="/assets/setwet_logo.png" id="page_1_img_4" /></a> -->
