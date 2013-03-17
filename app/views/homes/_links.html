@@ -1,15 +1,38 @@
   <!-- <img src="/assets/setwet_logo.png" id="page_1_img_4" /> -->
   <div id="page_1_link">
-    <a href="/faqs">FAQS</a>
+    <% if @faqs.present? %>
+      <a href="/faqs" id="link_selected">FAQS</a>    
+    <% else %>
+      <a href="/faqs" >FAQS</a>  
+    <% end %>    <br>
+    <% if @shop.present? %>
+      <a href="/shop" id="link_selected">SHOP</a>
+    <% else %>
+      <a href="/shop" >SHOP</a>
+    <% end %>  
     <br>
-    <a href="/shop">SHOP</a>
+    <% if @waxes.present? %>
+      <a href="/waxes" id="link_selected">WAXES</a>
+    <% else %>
+      <a href="/waxes">WAXES</a>
+    <% end %>
     <br>
-    <a href="/waxes">WAXES</a>
+    <% if @gels.present? %>
+      <a href="/gels" id="link_selected">GELS</a>
+    <% else %>
+      <a href="/gels" >GELS</a>
+    <% end %>  
     <br>
-    <a href="/gels">GELS</a>
+    <% if @deos.present? %>
+      <a href="/deos" id="link_selected">DEOS</a>
+    <% else %>
+      <a href="/deos" >DEOS</a>
+    <% end %>  
     <br>
-    <a href="/deos">DEOS</a>
-    <br>
-    <a href="/style_meter">STYLE METER</a>
+    <% if @style_meter.present? %>
+      <a href="/style_meter" id="link_selected">STYLE METER</a>
+    <% else %>
+      <a href="/style_meter" >STYLE METER</a>
+    <% end %>  
     <br>    
   </div>

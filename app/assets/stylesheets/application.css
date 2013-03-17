@@ -104,6 +104,11 @@ body {
     color: #1F1F1F;
 }
 
+#link_selected {
+    
+    color: #74D1ED !important;
+}
+
 #sitemap {
     position:absolute;
     bottom:20px;

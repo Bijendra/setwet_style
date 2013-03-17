@@ -4,27 +4,35 @@ class HomesController < ApplicationController
   end
   
   def faqs
+    @faqs = true
   end
 
   def shop
+    @shop = true
   end
 
   def home
+    @waxes = true
   end
 
   def gels
+    @gels = true
   end
 
   def deos
+    @deos = true
   end
 
   def waxes
+    @waxes = true
   end 	
 
   def styles
+    @waxes = true
   end
 
   def style_detail
+    @waxes = true
       #    ["NAME", "bg image"]
     cat_data = {
       "casual" => ["CASUAL", "/assets/std6.png"],
@@ -73,6 +81,7 @@ class HomesController < ApplicationController
   end
 
   def style_meter
+    @style_meter = true
   end	
 
   def sitemap
