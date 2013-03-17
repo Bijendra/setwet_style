@@ -1,3 +1,21 @@
+  <style>
+    ::-webkit-scrollbar {
+         width: 10px;
+    } 
+    ::-webkit-scrollbar-track {
+         background-color: dimgrey;
+    } /* the new scrollbar will have a flat appearance with the set background color */
+    ::-webkit-scrollbar-thumb {
+         background-color: darkgrey;
+    } /* this will style the thumb, ignoring the track */
+    ::-webkit-scrollbar-button {
+         background-color: dimgrey;
+    } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+    ::-webkit-scrollbar-corner {
+         background-color: #f26900;
+    } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+    </style>
 
   <div class="back_ground_fans">
   
@@ -62,7 +80,7 @@
     <div style="height: 18px; width: 400px; background: grey;margin-left: 403px;">
       <label style="background: lightblue;">FAQS</label>
       </div>
-    <div style="height: 217px; width: 400px; background: grey; margin-left: 403px; border-top: 1px solid white;">
+    <div style="height: 217px; width: 400px; background: grey; margin-left: 403px; border-top: 1px solid white;overflow:auto;">
       <div style="margin: 20px;">
 	<label id="question">How are Waxes, Clays, Gums different from Hair Gels?</label></br></br>	
 	<label id="answer">The key difference between these products and gels is their ability to remain pliable for longer periods thus offering you the ability to restyle without application of water. Apart from different levels of hold, these formats also provide varying levels of shine, texture and 
@@ -74,6 +92,13 @@
       <img src="/assets/reset.png" onclick="showPrevQuestion()" />
       <img src="/assets/submit.png" onclick="showNextQuestion()" />
       </div>
+    </div>
+
+
+    <div style='position:absolute;left:872px;top:302px;z-index:4'>			
+      <a id="setwet_home" class="" style="" href="/"> 
+	<img id="deo_setwet" src="/assets/setwet_logo.png" style="width:143px;height:151px;" />
+      </a>	
     </div>
 
 
