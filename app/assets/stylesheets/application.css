@@ -33,6 +33,13 @@ body {
     min-height:780px;
 }
 
+.bg_contact_us {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    background:url(/assets/refrence_contact.jpg) no-repeat;
+}
+
 #page_1_img_1 {
     position:absolute;
     top:431px;
@@ -180,5 +187,5 @@ a, u {
 }
 
 .wax_type_display {
-    background-image:url('screen7_bg.jpg') !important;
+    background-image:url('screen7_bg.jpg') no-repeat !important;
 }

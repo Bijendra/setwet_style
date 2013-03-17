@@ -1,4 +1,11 @@
 <%#= raise @contact.inspect %>
+<html>
+  <div class="bg_contact_us">
+  <div> 
+  <div id="links">
+    <%= render "links" %>
+  </div>  
+<html>
 
 <div class="contact_form">
   <%= form_for @contact_us, :url => thankyou_url,:html => {:multipart => true} do |f| %>
