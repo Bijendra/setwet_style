@@ -72,7 +72,7 @@ videoData[<%= key %>] = ["http://www.youtube.com/embed/<%= value[3] %>?wmode=tra
 function selectVideo(id) {
    var data = videoData[id];
    youtube_video_id = data[4];
-   document.getElementById('sm_youtube').src = data[0];
+   // document.getElementById('sm_youtube').src = data[0];
    document.getElementById('large_youtube').src = data[0];
    document.getElementById('video_text_bg').src = data[1];
    document.getElementById('selected_wax_img').src = data[2];
