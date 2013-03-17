@@ -42,7 +42,7 @@ html,body{height:100%;}
     <div style='position:absolute;left:421px;top:435px;z-index:10'>	
       <img id="" src="/assets/red_band.png" />	
     </div>
-    <div id="green_gel_pop" style='position:absolute;left:753px;top:313px;z-index:0' onmouseover="$('#green_popup').show();" onmouseout="$('#green_popup').hide();" >
+    <div id="green_gel_pop" style='position:absolute;left:753px;top:313px;z-index:0' onmouseover="$('#green_popup').stop(true, true).fadeIn();" onmouseout="$('#green_popup').stop(true, true).fadeOut();" >
       <img id="img_vhold" src="/assets/green_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)" />	
     </div>
     <div style='position:absolute;left:573px;top:435px;z-index:10'>
@@ -66,11 +66,11 @@ html,body{height:100%;}
       <a id="gel_swlook" href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET <br/> WET LOOK</a>		
     </div>
 
-    <div id="blue_gel_pop" style='position:absolute;left:451px;top:312px;z-index:10' onmouseover="$('#red_popup').show();" onmouseout="$('#red_popup').hide();">
+    <div id="blue_gel_pop" style='position:absolute;left:451px;top:312px;z-index:10' onmouseover="$('#red_popup').stop(true, true).fadeIn();" onmouseout="$('#red_popup').stop(true, true).fadeOut();">
       <img id="img_coolhead" src="/assets/blue_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)"/>	
     </div>
 
-    <div id="brown_gel_pop" style='position:absolute;left:603px;top:313px;z-index:10' onmouseover="$('#yellow_popup').show();" onmouseout="$('#yellow_popup').hide();">
+    <div id="brown_gel_pop" style='position:absolute;left:603px;top:313px;z-index:10' onmouseover="$('#yellow_popup').stop(true, true).fadeIn();" onmouseout="$('#yellow_popup').stop(true, true).fadeOut();">
       <img id="img_swlook" src="/assets/brown_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)" />	
     </div>
     <div id="green_popup" style='position:absolute;left:720px;top:441px;z-index:auto'>   
