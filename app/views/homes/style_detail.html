@@ -8,9 +8,12 @@
   <div style="position:absolute;left:370px;top:400px;z-index:9;cursor:pointer;" onclick="selectVideo(3);">
     <img style="width:138px;height:80px;" src="http://img.youtube.com/vi/<%= @data[3][3] %>/default.jpg" id="">                  
   </div>
-  <div style="position:absolute;left:370px;top:483px;z-index:9;cursor:pointer;" onclick="selectVideo(4);">
-    <img style="width:138px;height:80px;" src="http://img.youtube.com/vi/<%= @data[4][3] %>/default.jpg" id="">                  
-  </div>
+  <% if @data[4].present? %>
+    <div style="position:absolute;left:370px;top:483px;z-index:9;cursor:pointer;" onclick="selectVideo(4);">
+      <img style="width:138px;height:80px;" src="http://img.youtube.com/vi/<%= @data[4][3] %>/default.jpg" id="">                  
+    </div>
+  <% end %>
+
   <div style="position:absolute;left:515px;top:473px;z-index:0">
     <img style="width:350px;height:160px;" src="<%= @data[1][0] %>" id="video_text_bg">                  
   </div>
