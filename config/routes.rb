@@ -20,6 +20,7 @@ SetwetStyle::Application.routes.draw do
   match "/sitemap" => "homes#sitemap"
   match "/disclaimer" => "homes#disclaimer"
   match "/thankyou" => "homes#thankyou"
+  match "/home" => "homes#home"
 
 
   # Sample of regular route:
