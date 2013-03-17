@@ -17,42 +17,85 @@
     </div></a>  
       
       
-      <a href="#"><div id="blank_buy" style='position:absolute;left:335px;top:266px;z-index:9'>			<img id="buy_product" src="/assets/blank_buy_layout.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      <div id="blank_buy" style='position:absolute;left:335px;top:266px;z-index:4'>			<img id="buy_product" src="/assets/blank_buy_layout.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
       
       
       
-      </div></a>
+      </div>
 
-
+    <div id="buy_nav_waxes">
       <a href="#">
-      <div style='position:absolute;left:387.99998474121094px;top:463.76666259765625px;z-index:11'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      <div id="flipkart_1" style='position:absolute;left:473px;top:468px;z-index:11'>			<img id="" src="/assets/flipkart.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
       </div></a>
       <a href="#">
-      <div style='position:absolute;left:485.99998474121094px;top:455px;z-index:auto'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      <div id="purple_1" style='position:absolute;left:359px;top:468px;z-index:11'>			<img id="" src="/assets/purple.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
       
       
       
       </div>
       </a>
-      <div style='position:absolute;left:655.9999847412109px;top:470px;z-index:auto'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      <a href="#">
+      <div id="purple_2" style='position:absolute;left:627px;top:470px;z-index:11'>     <img id="" src="/assets/purple.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
       
       
       
-      </div><div style='position:absolute;left:865.9999847412109px;top:484px;z-index:auto'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      </div></a>
+
+      <a href="#">
+      <div id="flipkart_2" style='position:absolute;left:745px;top:470px;z-index:11'>			<img id="" src="/assets/flipkart.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
       
       
       
-      </div><div style='position:absolute;left:928.9999847412109px;top:484px;z-index:auto'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      </div>
+      </a>
+      <div style='position:absolute;left:865.9999847412109px;top:484px;z-index:auto'>			<img id="left_nav" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      
+      
+      
+      </div><div style='position:absolute;left:928.9999847412109px;top:484px;z-index:auto'>			<img id="right_nav" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
       
       </div>
       </div></a>
+    </div>  
+
+    <div id="buy_nav_gels">
+      <a href="#">
+      <div id="purple_5" style='position:absolute;left:427px;top:470px;z-index:11'>     <img id="" src="/assets/purple.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>   
+      </div></a>
+
+      <a href="#">
+      <div id="purple_6" style='position:absolute;left:600px;top:470px;z-index:11'>     <img id="" src="/assets/purple.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>   
+      </div></a>
+
+      <a href="#">
+      <div id="purple_7" style='position:absolute;left:763px;top:470px;z-index:11'>     <img id="" src="/assets/purple.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>   
+      </div></a>
+    
     </div>
+
+    <div id="buy_nav_deos">
+      <a href="#">
+      <div id="purple_6" style='position:absolute;left:427px;top:470px;z-index:11'>     <img id="" src="/assets/purple.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>   
+      </div></a>
+
+      <a href="#">
+      <div id="purple_7" style='position:absolute;left:600px;top:470px;z-index:11'>     <img id="" src="/assets/purple.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>   
+      </div></a>
+
+      <a href="#">
+      <div id="purple_8" style='position:absolute;left:763px;top:470px;z-index:11'>     <img id="" src="/assets/purple.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>   
+      </div></a>
+    
+    </div>
+
+  </div>
     
     <script>
     $(document).ready(function () {
           $("#img_buy_wax").attr('src',"/assets/buy_now_wax.png");
           $("#buy_product").attr('src',"/assets/buy_wax_slide_1.png");
-          
+          $("#buy_nav_gels").hide();
+          $("#buy_nav_deos").hide();
        });
     
     
@@ -62,6 +105,9 @@
      $("#img_buy_deo").attr('src',"/assets/buy_deo_gray.png");
      $("#img_buy_gel").attr('src',"/assets/buy_gel.png");
      $("#buy_product").attr('src',"/assets/buy_gel_slide.png");
+     $("#buy_nav_waxes").hide();
+     $("#buy_nav_gels").show();
+     $("#buy_nav_deos").hide();
      return false;
    });
 
@@ -71,16 +117,24 @@
      $("#img_buy_wax").attr('src',"/assets/buy_wax_gray.png");
      $("#img_buy_deo").attr('src',"/assets/deos_buy.png");
      $("#buy_product").attr('src',"/assets/deos_buy_slide_1.png");
+     $("#buy_nav_waxes").hide();
+     $("#buy_nav_gels").hide();
+     $("#buy_nav_deos").show();
      return false;
    });
 
    $('#buy_wax_gray').click(function(){
+     $("#buy_nav_waxes").show();
      $("#img_buy_gel").attr('src',"/assets/gels_buy_grey.png");
      $("#img_buy_deo").attr('src',"/assets/buy_deo_gray.png");
      $("#img_buy_wax").attr('src',"/assets/buy_now_wax.png");
      $("#buy_product").attr('src',"/assets/buy_wax_slide_1.png");
+     $("#buy_nav_gels").hide();
+     $("#buy_nav_deos").hide();
      return false;
    });
     
    
     </script>
+
+    <%= render "links" %>
