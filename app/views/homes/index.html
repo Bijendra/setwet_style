@@ -4,8 +4,7 @@
     <img src="/assets/setwet_logo.png" id="page_1_img_2" style="display:none;" /></a>
 </div>
 <div id="page_1_slide_2">
-  <img src="/assets/22.png" id="page_1_img_3"  />
-  
+  <img src="/assets/22.png" id="page_1_img_3"  />  
   <%= render "layouts/footer.html.erb" %>
   <a href="/"><img src="/assets/setwet_logo.png" id="page_1_img_4" /></a>
 </div>
@@ -15,12 +14,13 @@
     $('#page_1_img_1').slideDown();
     $('#page_1_img_2').slideDown();
   }, 3000); 
+  
   setTimeout(function() {
-    window.scrollTo(0,780)
+    $('html, body').animate({scrollTop: $("#page_1_slide_2").offset().top}, 1500);
   }, 5000); 
 
   setTimeout(function() {
-  location.href = "/home";
+      location.href = "/home";
   }, 7000);
 </script>
 
