@@ -29,45 +29,60 @@ html,body{height:100%;}
 }
 
 
-
 </style>
 </head>
 	   
 <body>    
+  
+  <div id="gel_bg"style="width:1024px;height:780px;background:url(/assets/setwet_gel_range_bg.jpg) no-repeat;">
+  </div>
+  <div id="gel_bg2"style="display:none;width:1024px;height:768px;background:url(/assets/gel_15_bg.jpg) no-repeat;">
+  </div> 
+  <div id="gel_main_div" style="display: block;">
+    <div style='position:absolute;left:421px;top:435px;z-index:10'>	
+      <img id="" src="/assets/red_band.png" />	
+    </div>
+    <div id="green_gel_pop" style='position:absolute;left:753px;top:313px;z-index:0' onmouseover="$('#green_popup').show();" onmouseout="$('#green_popup').hide();" >
+      <img id="img_vhold" src="/assets/green_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)" />	
+    </div>
+    <div style='position:absolute;left:573px;top:435px;z-index:10'>
+      <img id="" src="/assets/yellow_band.png" />	
+    </div>
+    <div style='position:absolute;left:721px;top:435px;z-index:10'>
+      <img id="" src="/assets/green_band.png" />	
+    </div>
+    <div style='position:absolute;left:872px;top:302px;z-index:4'>			
+      <a id="setwet_home" class="" style="" href="/"> 
+	<img id="deo_setwet" src="/assets/setwet_logo.png" style="width:143px;height:151px;" />
+      </a>	
+    </div>
+    <div style='position:absolute;left:452px;top:458px;z-index:0'>
+      <a id="gel_coolhead" href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET <br/> COOL HEAD</a>
+    </div>
+    <div style='position:absolute;left:745px;top:458px;z-index:0'>
+      <a id="gel_vhold" href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET <br/> VERTICAL HOLD</a>		
+    </div>
+    <div style='position:absolute;left:609.9999847412109px;top:458px;z-index:0'>
+      <a id="gel_swlook" href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET <br/> WET LOOK</a>		
+    </div>
 
-	<div id="gel_bg"style="width:1024px;height:780px;background:url(/assets/setwet_gel_range_bg.jpg) no-repeat;">
-	</div>
-	<div id="gel_bg2"style="display:none;width:1024px;height:768px;background:url(/assets/gel_15_bg.jpg) no-repeat;">
-	</div> 
-	<div id="gel_main_div" style="display: block;">
-	<div style='position:absolute;left:421px;top:435px;z-index:'>			<img id="" src="/assets/red_band.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+    <div id="blue_gel_pop" style='position:absolute;left:451px;top:312px;z-index:10' onmouseover="$('#red_popup').show();" onmouseout="$('#red_popup').hide();">
+      <img id="img_coolhead" src="/assets/blue_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)"/>	
     </div>
-    <div id="green_gel_pop" style='position:absolute;left:753px;top:313px;z-index:'>			<img id="img_vhold" src="/assets/green_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)" class="" title="" style="" alt="Image Alt value"/>	
-    </div>
-    <div style='position:absolute;left:573px;top:435px;z-index:'>			<img id="" src="/assets/yellow_band.png" onclick="" class="" title="" style="" alt="Image Alt value"/>	
-    </div>
-    <div style='position:absolute;left:721px;top:435px;z-index:'>			<img id="" src="/assets/green_band.png" onclick="" class="" title="" style="" alt="Image Alt value"/>	
-    </div>
-    <div style='position:absolute;left:872px;top:302px;z-index:4'>			<a id="setwet_home" class="" style="" href="/"> <img id="deo_setwet" src="/assets/setwet_logo.png" onclick="" class="" title="" style="width:143px;height:151px;" alt="Image Alt value"/> </a>	
-    </div>
-    <div style='position:absolute;left:452px;top:458px;z-index:'><a id="gel_coolhead" class="" style="" href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET <br/> COOL HEAD</a>
-    </div>
-    <div style='position:absolute;left:745px;top:458px;z-index:'><a id="gel_vhold" class="" style="" href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET <br/> VERTICAL HOLD</a>		
-    </div>
-    <div style='position:absolute;left:609.9999847412109px;top:458px;z-index:'><a id="gel_swlook" class="" style="" href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET <br/> WET LOOK</a>		
- 	</div>
- 	<div id="blue_gel_pop" style='position:absolute;left:451px;top:312px;z-index:'>			<img id="img_coolhead" src="/assets/blue_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)" class="" title="Image title" style="" alt="Image Alt value"/>	
-   	</div>
-   	<div id="brown_gel_pop" style='position:absolute;left:603px;top:313px;z-index:'>			<img id="img_swlook" src="/assets/brown_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)" class="" title="Image title" style="" alt="Image Alt value"/>	
-   	</div>
-   	<div id="green_popup" style='position:absolute;left:720px;top:441px;z-index:auto'>      <img id="" src="/assets/screen13_green.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>
-      </div>
-	<div id="red_popup" style='position:absolute;left:421px;top:441px;z-index:auto'>      <img id="" src="/assets/screen13_red.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>
-	</div> 
-	<div id="yellow_popup" style='position:absolute;left:572px;top:441px;z-index:auto'>      <img id="" src="/assets/screen13_yellow.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>
-	</div>
 
-	</div>
+    <div id="brown_gel_pop" style='position:absolute;left:603px;top:313px;z-index:10' onmouseover="$('#yellow_popup').show();" onmouseout="$('#yellow_popup').hide();">
+      <img id="img_swlook" src="/assets/brown_gel.png" href="javascript:void(0)" onclick="start_carousel(this.id)" />	
+    </div>
+    <div id="green_popup" style='position:absolute;left:720px;top:441px;z-index:auto'>   
+      <img id="" src="/assets/screen13_green.png" />
+    </div>
+    <div id="red_popup" style='position:absolute;left:421px;top:441px;z-index:auto'>
+      <img id="" src="/assets/screen13_red.png" />
+    </div> 
+    <div id="yellow_popup" style='position:absolute;left:572px;top:441px;z-index:auto'> 
+      <img id="" src="/assets/screen13_yellow.png" />
+    </div>    
+  </div>
  
   <div id="links">
     <%= render "links" %>
@@ -76,80 +91,146 @@ html,body{height:100%;}
 
   
   <div id="myCarousel" class="carousel slide" style="display: none">
-  	<!-- Carousel items -->
-  	<div class="carousel-inner">
-  		<div class="active item">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="active item">
         <img id="1" src="/assets/screen15_blue.png" />
-    	</div>
-    	<div class="item">
+      </div>
+      <div class="item">
         <img id="2" src="/assets/screen15_yellow.png" />
-    	</div>
-    	<div class="item">
+      </div>
+      <div class="item">
         <img id="3" src="/assets/screen15_green.png" />
-    	</div>    	
-    	
-  	</div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
+      </div>    	
+      
+    </div>
+    <!-- Carousel nav -->
+    <a href="#myCarousel" data-slide="prev" style="position:absolute;z-index:20;top:370px;left:-38px;"><img src="/assets/left.png"/></a>
+    <a href="#myCarousel" data-slide="next" style="position:absolute;z-index:20;top:370px;left:545px;"><img src="/assets/right.png"/></a>
+  </div>
+  
+  
+  
+  <div id="gel_text" style='position:absolute;left:554px;top:668px;z-index:18'><a onclick="start_video()" style="color:#1b9ad3;font-size:12px;" href="javascript:void(0);">WATCH THE SETWET NEW COOL COMMERCIAL HERE</a></div>
+  <div id="youtube_video" style="position:absolute;left:889px;top:638px;z-index:10">
+    <a href="javascript:void(0)" onclick="start_video()"><img src="http://img.youtube.com/vi/hp6AxDgV4rU/default.jpg" id="deo_video" /> </a>
+  </div>
 
+<% if(false) %>  
+  <div id="btn_cross" style="position:absolute;left:854px;top: 86px;z-index:500; display:none">
+    <img onclick="hide_video('hide');" style="height:36px;width:37px;cursor:pointer;" src="/assets/cross-button.png" />                  
+  </div>
+<% end %>
 
+  <div id="thevideo" class="video_container" style="display:none">
+  </div>  
 
-<div id="gel_text" style='position:absolute;left:554px;top:668px;z-index:18'><a id="" class="" style="color:#1b9ad3;font-size:12px;" href="">WATCH THE SETWET NEW COOL COMMERCIAL HERE</a></div>
-<div id="youtube_video" style="position:absolute;left:889px;top:638px;z-index:10">
-    <a  class="" style="" href="javascript:void(0)" onclick="start_video()"><img alt="Image Alt value" style="" title="" class="" onclick="" src="http://img.youtube.com/vi/TRSJOV-mjw0/default.jpg" id="deo_video" /> </a>
-</div>
-
-<div id="btn_cross" style="position:absolute;left:854px;top: 86px;z-index:500; display:none">
-      <img onclick="hide_video('hide');" style="height:36px;width:37px;cursor:pointer;" src="/assets/cross-button.png" />                  
-</div>
-<div id="thevideo" class="video_container" style="display:none">
-<iframe width="793" height="579" src="http://www.youtube.com/v/XSGBVzeBUbk?hl=en_US&;version=3&autoplay=1"></iframe>
-</div>  
-
-<%= render "layouts/footer.html.erb" %>
+  <%= render "layouts/footer.html.erb" %>
 </body>
  <script>
- function start_carousel(id){
-if(/coolhead/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 1 + ')').addClass('active');}
-if(/swlook/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 2 + ')').addClass('active');}
-if(/vhold/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 3 + ')').addClass('active');}
-document.getElementById("myCarousel").style.display = "block";
-document.getElementById("gel_bg").style.display = "none";
-document.getElementById("gel_bg2").style.display = "block";
-document.getElementById("gel_text").style.display = "none";
-document.getElementById("gel_main_div").style.display = "none";
-document.getElementById("youtube_video").style.display = "none";
-$('#myCarousel').carousel({
-  interval: 3000
-});
-$('#myCarousel').carousel('cycle');
-};
 
+
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "//www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+    player = new YT.Player('thevideo', {
+    height: '233',
+    width: '350',
+    videoId: 'hp6AxDgV4rU',
+    events: {
+    'onReady': onPlayerReady,
+    'onStateChange': onPlayerStateChange
+
+    }
+    });
+    }
+    
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+   
+    // 5. The API calls this function when the player's state changes.
+    //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+     var done = false;
+     function onPlayerStateChange(event) {
+     if (event.data == YT.PlayerState.PLAYING) {     
+      document.getElementById('thevideo').style.width = "750px";
+      document.getElementById('thevideo').style.height = "600px";
+      document.getElementById('thevideo').style.top = "80px";
+      document.getElementById('thevideo').style.left = "120px";            
+    } else if(event.data == YT.PlayerState.PAUSED) {
+        document.getElementById('thevideo').style.display = "none";
+        hide_video('hide');  
+    }
+     else if(event.data == YT.PlayerState.ENDED){
+        document.getElementById('thevideo').style.display = "none";
+        hide_video('hide');
+     }
+    }
+    function stopVideo() {
+      player.stopVideo();
+    }
+
+
+
+
+
+
+
+
+
+
+   function start_carousel(id){
+   if(/coolhead/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 1 + ')').addClass('active');}
+   if(/swlook/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 2 + ')').addClass('active');}
+   if(/vhold/.test(id)){ $('#myCarousel .carousel-inner .item.active').removeClass('active'); $('#myCarousel .carousel-inner div:nth-child(' + 3 + ')').addClass('active');}
+   document.getElementById("myCarousel").style.display = "block";
+   document.getElementById("gel_bg").style.display = "none";
+   document.getElementById("gel_bg2").style.display = "block";
+   document.getElementById("gel_text").style.display = "none";
+   document.getElementById("gel_main_div").style.display = "none";
+   document.getElementById("youtube_video").style.display = "none";
+   $('#myCarousel').carousel({
+   interval: 3000
+   });
+$('#myCarousel').carousel('cycle');
+   };
+   
 
 function start_video(){
-document.getElementById("gel_bg").style.display = "none";
-document.getElementById("gel_bg2").style.display = "block";
-document.getElementById("gel_main_div").style.display = "none";
-document.getElementById("gel_text").style.display = "none";
-document.getElementById("youtube_video").style.display = "none";
-$("#btn_cross").css("display","block");
-$("#thevideo").css("display","block");
+   document.getElementById("gel_bg").style.display = "none";
+   document.getElementById("gel_bg2").style.display = "block";
+   document.getElementById("gel_main_div").style.display = "none";
+   document.getElementById("gel_text").style.display = "none";
+   document.getElementById("youtube_video").style.display = "none";
+   onYouTubeIframeAPIReady();
+   document.getElementById('thevideo').style.width = "750px";
+   document.getElementById('thevideo').style.height = "600px";
+   // $("#btn_cross").css("display","block");
+   $("#thevideo").css("display","block");
 }
 
 function hide_video(state){
- var div = document.getElementById("thevideo");
-    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-    div.style.display = state == 'hide' ? 'none' : '';
-    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
-    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
-$("#btn_cross").css("display","none");
-document.getElementById("gel_main_div").style.display = "";
-document.getElementById("gel_text").style.display = "";
-document.getElementById("youtube_video").style.display = "";
-document.getElementById("gel_bg").style.display = "";
-document.getElementById("gel_bg2").style.display = "none";
+   var div = document.getElementById("thevideo");
+   // var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+   div.style.display = state == 'hide' ? 'none' : '';
+   func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+   // iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+   // $("#btn_cross").css("display","none");
+   document.getElementById("gel_main_div").style.display = "";
+   document.getElementById("gel_text").style.display = "";
+   document.getElementById("youtube_video").style.display = "";
+   document.getElementById("gel_bg").style.display = "";
+   document.getElementById("gel_bg2").style.display = "none";
 }
  </script>
  
@@ -161,37 +242,7 @@ document.getElementById("gel_bg2").style.display = "none";
           $('#red_popup').hide();
           $('#green_popup').hide();
           $('#yellow_popup').hide();
-          $('#blue_popup').hide();
-          
-          $('#green_gel_pop').hover(function(){
-             $('#green_popup').show();
-             
-             },
-             function(){
-               $('#green_popup').hide(); 
-             }  
-          );    
-
-          $('#brown_gel_pop').hover(function(){
-             $('#yellow_popup').show();
-             
-             },
-             function(){
-               $('#yellow_popup').hide(); 
-             }  
-          );      
-
-          $('#blue_gel_pop').hover(function(){
-             $('#red_popup').show();
-             
-             },
-             function(){
-               $('#red_popup').hide(); 
-             }  
-          );            
-          
-
-
+          $('#blue_popup').hide();                   
        });
        
        

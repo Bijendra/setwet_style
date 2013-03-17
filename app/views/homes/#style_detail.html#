@@ -108,7 +108,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     //    after the API code downloads.
     var player;
     function onYouTubeIframeAPIReady() {
-      console.log("wwww");
     player = new YT.Player('large_youtube', {
     height: '233',
     width: '350',
