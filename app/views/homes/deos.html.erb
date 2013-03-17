@@ -1,6 +1,14 @@
 <html>
 <head>
 <style type='text/css'>
+#sitemap {
+    position:absolute;
+    bottom:5px;
+    right:1px;
+    width: 500px;
+    height: 30px;
+} 
+
 #thevideo { 
   position: absolute; 
   left: 75px;
@@ -81,7 +89,7 @@ document.getElementById("deo_bg2").style.display = "none";
 
 </head>
   <body>
-<div id="deo_bg"style="display:block;width:1024px;height:768px;background:url(/assets/deo_bg_current.jpg) no-repeat;">
+<div id="deo_bg" style="display:block;width:1024px;height:768px;background:url(/assets/deo_bg_current.jpg) no-repeat;">
 </div>
 <div id="deo_bg2"style="display:none;width:1024px;height:768px;background:url(/assets/deo_bg_2.jpg) no-repeat;">
 </div>
@@ -123,8 +131,8 @@ document.getElementById("deo_bg2").style.display = "none";
     
     </div>
     
-    <div id="deo_text" style='position:absolute;left:542px;top:704px;z-index:18'><a id="" class="" style="color:#1b9ad3;font-size:12px;" href="">DISCOVER THE NEW CALL OF THE COOL <br>WATCH THE SETWET NEW COOL COMMERCIAL HERE</a></div>
-    <div id="youtube_video" style="position:absolute;left:899px;top:677px;z-index:10">
+    <div id="deo_text" style='position:absolute;left:554px;top:668px;z-index:18'><a id="" class="" style="color:#1b9ad3;font-size:12px;" href="">DISCOVER THE NEW CALL OF THE COOL <br>WATCH THE SETWET NEW COOL COMMERCIAL HERE</a></div>
+    <div id="youtube_video" style="position:absolute;left:889px;top:638px;z-index:10">
     <a  class="" style="" href="javascript:void(0)" onclick="start_video()"><img alt="Image Alt value" style="" title="" class="" onclick="" src="http://img.youtube.com/vi/TRSJOV-mjw0/default.jpg" id="deo_video" /> </a>
     </div>
     
@@ -169,10 +177,7 @@ document.getElementById("deo_bg2").style.display = "none";
     </div> 
 
     <%= render "layouts/footer.html.erb" %>
-</div> 	
 
-
-</div> 
 	
 </body>
 <script>
