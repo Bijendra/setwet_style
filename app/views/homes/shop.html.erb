@@ -1,9 +1,86 @@
-"shop"
-<html>
-  <div class="back_ground_shop">
-  <div>	
-<html>
+<div style="width:1024px;height:780px;background:url(/assets/50ab67e3d7ced290ba000001/5140160766e71deb08000002/K75TzNJeJ2l7aleMRTCn.jpg) no-repeat;width:1024px;height:780px;background:url(/assets/buy_now.jpg) no-repeat;">
+ 
+      
+      <a href="#"><div id="buy_gel_gray" style='position:absolute;left:431px;top:265px;z-index:12'>     <img  id="img_buy_gel" src="/assets/gels_buy_grey.png" onclick="" class="" title="Image title" style="width:95px;height:28px;" alt="Image Alt value"/> 
+      </div></a>
 
-<div id="links">
-	<%= render "links" %>
-</div> 
+
+
+      <a href="#"><div id="buy_deos_gray" style='position:absolute;left:529px;top:266px;z-index:12'>     <img  id="img_buy_deo" src="/assets/buy_deo_gray.png" onclick="" class="" title="Image title" style="height:23px;width:93px;" alt="Image Alt value"/>	
+      
+      
+      
+      </div>
+    </a>
+      
+    <a href="#"><div id="buy_wax_gray" style='position:absolute;left:334.99998474121094px;top:266px;z-index:12'>      <img id="img_buy_wax" src="/assets/buy_wax_gray.png" onclick="" class="" title="Image title" style="width:92px;height:24px;" alt="Image Alt value"/>  
+    </div></a>  
+      
+      
+      <a href="#"><div id="blank_buy" style='position:absolute;left:335px;top:266px;z-index:9'>			<img id="buy_product" src="/assets/blank_buy_layout.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      
+      
+      
+      </div></a>
+
+
+      <a href="#">
+      <div style='position:absolute;left:387.99998474121094px;top:463.76666259765625px;z-index:11'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      </div></a>
+      <a href="#">
+      <div style='position:absolute;left:485.99998474121094px;top:455px;z-index:auto'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      
+      
+      
+      </div>
+      </a>
+      <div style='position:absolute;left:655.9999847412109px;top:470px;z-index:auto'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      
+      
+      
+      </div><div style='position:absolute;left:865.9999847412109px;top:484px;z-index:auto'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      
+      
+      
+      </div><div style='position:absolute;left:928.9999847412109px;top:484px;z-index:auto'>			<img id="" src="/assets/rails.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>	
+      
+      </div>
+      </div></a>
+    </div>
+    
+    <script>
+    $(document).ready(function () {
+          $("#img_buy_wax").attr('src',"/assets/buy_now_wax.png");
+          $("#buy_product").attr('src',"/assets/buy_wax_slide_1.png");
+          
+       });
+    
+    
+
+   $('#buy_gel_gray').click(function(){   
+     $("#img_buy_wax").attr('src',"/assets/buy_wax_gray.png");
+     $("#img_buy_deo").attr('src',"/assets/buy_deo_gray.png");
+     $("#img_buy_gel").attr('src',"/assets/buy_gel.png");
+     $("#buy_product").attr('src',"/assets/buy_gel_slide.png");
+     return false;
+   });
+
+
+   $('#buy_deos_gray').click(function(){
+     $("#img_buy_gel").attr('src',"/assets/gels_buy_grey.png");
+     $("#img_buy_wax").attr('src',"/assets/buy_wax_gray.png");
+     $("#img_buy_deo").attr('src',"/assets/deos_buy.png");
+     $("#buy_product").attr('src',"/assets/deos_buy_slide_1.png");
+     return false;
+   });
+
+   $('#buy_wax_gray').click(function(){
+     $("#img_buy_gel").attr('src',"/assets/gels_buy_grey.png");
+     $("#img_buy_deo").attr('src',"/assets/buy_deo_gray.png");
+     $("#img_buy_wax").attr('src',"/assets/buy_now_wax.png");
+     $("#buy_product").attr('src',"/assets/buy_wax_slide_1.png");
+     return false;
+   });
+    
+   
+    </script>
