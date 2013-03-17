@@ -92,6 +92,7 @@ body {
     width: 135px;
     height: 188px;
     padding-left: 20px;
+
 }
 
 #page_1_link a {
@@ -100,6 +101,7 @@ body {
     font-family: Arial,Arial,Helvetica,sans-serif;
     line-height: 30px;
     text-decoration: none;
+    color: #1F1F1F;
 }
 
 #sitemap {
