@@ -1,8 +1,84 @@
 
-<html>
   <div class="back_ground_fans">
+  
+  <script>
+    
+        var questionNo = 0 ;
+	var questionArray = new Array();
+	var answerArray = new Array();
+	
+	
+	//function createQuestionArray(){
+	
+	questionArray[0] = 'How are Waxes, Clays, Gums different from Hair Gels? '
+	answerArray[0] = 'The key difference between these products and gels is their ability to remain pliable for longer periods thus offering you the ability to restyle without application of water. Apart from different levels of hold, these formats also provide varying levels of shine, texture and volume. For specific details, refer to the product section. '
+	
+	questionArray[1] = 'Better hold is great, but is there anything I get from these products but not from gels? '
+	answerArray[1] = "Yes,  apart from better re-styling, these formats have a higher melting point, which means even the harshest sunlight won’t melt the product. This enables you to style each and every hair strand individually (if that's your thing) without the product spreading in your hair. Also, each product offers different shine, texture & volume."
+	
+	questionArray[2] = 'How does ShockWave Styling Clay compare to my current Vertical Hold Styling Gel?  '
+	answerArray[2] = 'ShockWave Styling Clay offers the ultimate in hair hold. For a comparison of all four formats with Set Wet Gels refer this table (link  to the hold Shine Meter) '
+	
+	questionArray[3] = 'Are these products to be used on wet hair?  '
+	answerArray[3] = "No, unlike Gels, waxes, clays and gums are used either on completely dry hair or towel dried hair. Specifically, it is recommended that Fiber Gum and Glaze Wax be used on towel dried hair (70% dry) and Matt Wax & Clay be  used on completely dry hair. "
+	
+	questionArray[4] = 'My FreeStyler Matt Wax is almost solid, how do I use it?  '
+	answerArray[4] = "Free Styler Matt Wax and ShockWave Styling Clay need to be emulsified by rubbing a small amount vigorously between palms. For video instructions, refer to any of the how-to videos available in the relevant product section. "
+	
+	questionArray[5] = 'How do I know which product is for me?  '
+	answerArray[5] = "We recommend going through the product section and choosing your Set Wet Styler basis the level of shine, hold & texture required. Remember, higher hold is not always better, e.g. if you are going for a party, a high shine with moderate hold is better suited - making Set Wet AfterHours  Glaze Wax your perfect choice.  "
+	
+	questionArray[6] = 'I have extremely thin hair, can I use any of the products?  '
+	answerArray[6] = "FreeStyler Matt Wax, ShockWave Styling Clay & AfterHours Glaze Wax can be used on all types of hair. While Amoeba Fibre Gum, we recommend only for moderate to thick hair."
+	
+	//}
+	
+	function showPrevQuestion(){
+	if(questionNo != 0) {
+	questionNo = questionNo - 1;
+	//alert(questionArray[questionNo])
+	document.getElementById('question').innerHTML = questionArray[questionNo] ; 
+	document.getElementById('answer').innerHTML = answerArray[questionNo] ;
+	}
+	}
+	
+	function showNextQuestion(){
+	
+	if(questionNo != 6) {
+	questionNo = questionNo +1;
+	//alert(questionArray[questionNo])
+	//document.getElementById("question").innerHTML =""
+	document.getElementById('question').innerHTML = questionArray[questionNo] ;
+	document.getElementById('answer').innerHTML = answerArray[questionNo] ;
+	} 
+	}
+	
+
+
+	</script>
+  
+  <div style="width:100%;height:780px;background: url(assets/stdet_bg.jpg) no-repeat;" >
+    <div style="height:200px;line-height:200px;">&nbsp;</div>
+    <div style="height: 18px; width: 400px; background: grey;margin-left: 403px;">
+      <label style="background: lightblue;">FAQS</label>
+      </div>
+    <div style="height: 217px; width: 400px; background: grey; margin-left: 403px; border-top: 1px solid white;">
+      <div style="margin: 20px;">
+	<label id="question">How are Waxes, Clays, Gums different from Hair Gels?</label></br></br>	
+	<label id="answer">The key difference between these products and gels is their ability to remain pliable for longer periods thus offering you the ability to restyle without application of water. Apart from different levels of hold, these formats also provide varying levels of shine, texture and 
+	  volume. For specific details, refer to the product section.</label>
+	</div> 
+      </div>
+    
+    <div style="position: absolute; top: 303px; left: 814px; width: 100px;">
+      <img src="/assets/reset.png" onclick="showPrevQuestion()" />
+      <img src="/assets/submit.png" onclick="showNextQuestion()" />
+      </div>
+    </div>
+
+
   <div>	
   <div id="links">
     <%= render "links" %>
-  </div> 	
-<html>
+  </div> 
+  <%= render "layouts/footer.html.erb" %>

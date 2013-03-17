@@ -1,31 +1,44 @@
 <%#= raise @contact.inspect %>
-<html>
-  <div class="bg_contact_us">
+  <div class="bg_contact_us" style="width:100%;height:780px;">
+
+
+
+<div class="contact_form" style="position:absolute;top:200px;left:568px;">
+
+<form method="post" id="new_contact_us" enctype="multipart/form-data" class="new_contact_us" action="http://localhost:3000/thankyou" accept-charset="UTF-8">
+  <input id="contact_us_full_name" name="contact_us[full_name]" size="30" placeholder="Full Name" type="text"><br>
+  <input id="contact_us_email" name="contact_us[email]" size="30" type="text" placeholder="Email"><br>
+  <input id="contact_us_phone_no" name="contact_us[phone_no]" size="30" type="text" placeholder="Phone No."><br>
+  <input id="contact_us_address" name="contact_us[address]" size="30" type="text" placeholder="Address"><br>
+  <label for="contact_us_country">Country:</label>
+  <select id="contact_us_country" name="contact_us[country]"><option value="India" selected="selected">India</option>
+    <option value="Europe">Europe</option>
+    <option value="Canada">Canada</option>
+    <option value="Russia">Russia</option></select><br>
+  <label for="contact_us_issue_type">Issue Type:</label>
+  <select id="contact_us_country" name="contact_us[country]"><option value="India" selected="selected">India</option>
+    <option value="Europe">Europe</option>
+    <option value="Canada">Canada</option>
+    <option value="Russia">Russia</option></select><br>
+  <input id="contact_us_query" name="contact_us[query]" size="30" type="text" Placeholder="Query"><br>
+  <label for="contact_us_attachment">Attachments:</label>
+  <input id="contact_us_attachment" name="contact_us[attachment]" type="file"><br><br>
+  <input name="commit" class="btn btn-primary" value="Submit Query" type="submit">
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
   <div> 
   <div id="links">
     <%= render "links" %>
   </div>  
-<html>
 
-<div class="contact_form">
-  <%= form_for @contact_us, :url => thankyou_url,:html => {:multipart => true} do |f| %>
-  <%= f.label :full_name, 'Full Name:' %>:
-  <%= f.text_field :full_name %><br />
-  <%= f.label :email, 'Email:' %>:
-  <%= f.text_field :email %><br />
-  <%= f.label :phone_no, 'Phone No.:' %>:
-  <%= f.text_field :phone_no %><br />
-  <%= f.label :address, 'Address:' %>:
-  <%= f.text_field :address %><br />
-  <%= f.label :country, 'Country:' %>
-  <%= f.select :country, options_for_select(["India", "Europe", "Canada", "Russia"], :selected => "India"), :class => 'genForm_dropBox' %><br/>
-  <%= f.label :issue_type, 'Issue Type:' %>
-  <%= f.select :country, options_for_select(["India", "Europe", "Canada", "Russia"], :selected => "India"), :class => 'genForm_dropBox' %><br/>
-  <%= f.label :query, 'Query:' %>
-  <%= f.text_field :query %><br />
-  <%= f.label :attachment, 'Attachments:' %>:
-  <%= f.file_field :attachment %><br />
-
-  <%= f.submit %>
-  <% end %>
-</div>
+  <%= render "layouts/footer.html.erb" %>

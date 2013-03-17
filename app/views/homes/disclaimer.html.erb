@@ -1,0 +1,93 @@
+  <style>
+    ::-webkit-scrollbar {
+         width: 10px;
+    } 
+    ::-webkit-scrollbar-track {
+         background-color: dimgrey;
+    } /* the new scrollbar will have a flat appearance with the set background color */
+    ::-webkit-scrollbar-thumb {
+         background-color: darkgrey;
+    } /* this will style the thumb, ignoring the track */
+    ::-webkit-scrollbar-button {
+         background-color: dimgrey;
+    } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+    ::-webkit-scrollbar-corner {
+         background-color: #f26900;
+    } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+    </style>
+  
+  
+  <script>
+        var questionNo = 0 ;
+	var questionArray = new Array();
+	var answerArray = new Array();
+	
+	</script>
+  
+  <div style="width:100%;height:780px;background: url(/assets/stdet_bg.jpg) no-repeat;" >
+    <div style="height:200px;line-height:200px;">&nbsp;</div>
+    <div style="height: 18px; width: 400px; background: grey;margin-left: 403px;">
+      <label style="background: lightblue;">Disclaimer:</label>
+    </div>
+    <div style="height: 231px; width: 400px; background: grey; margin-left: 403px; border-top: 1px solid white; overflow: auto;">
+      <div style="margin: 20px;">
+	<ul>
+	  <li>
+	    This is the official web site of Marico Limited and has been developed to provide general public information which is subject to change without notice. The documents and information displayed in this site are for reference purposes only.
+	    </li>
+	  <li>
+	    The content on the site is updated on a continual basis. While Marico Limited attempts to keep its web information accurate and timely, no representations, warranties or guarantees whatsoever are made as to the accuracy, adequacy, reliability, completeness, suitability or applicability of the information, text, graphics, hyperlinks, and other items contained on this server or any other server.
+	    </li>
+	  <li>
+	    Unless otherwise stated, copyright and all intellectual property rights in all material presented on the site (including but not limited to text, audio, video or graphical images), trademarks and logos appearing on this site are the property of Marico Limited, its affiliates and associates and are protected under applicable Indian laws. Commercial use of web materials is prohibited without the written permission of the company.
+	    </li>
+	  <li>
+	    Any material/ contents downloaded or otherwise obtained through the use of the site is done at your own discretion and risk. Marico Limited is neither responsible nor liable for any viruses or other contamination of your system, nor for any damages, claims, delays, inaccuracies, errors or omissions arising out of your use of the site or with respect to the material contained on the site.
+	    </li>
+	  <li>
+	    Some of the hyperlinks contained in this site may lead to resources outside the site including the Web Sites of Marico affiliates in India and other countries. Information contained in any site linked from this site may not have been reviewed for accuracy or legal sufficiency. Marico Limited is not responsible for the content of any such external hyperlinks. References to any external links should not be construed as an endorsement of the links or their content.
+	    </li>
+	  <li>
+	    Nothing on this website constitutes an invitation or offer to invest or deal in the securities of Marico Limited. In particular, actual results and developments may be materially different from any forecast, opinion or expectation expressed on this Web Site as also from the historical performance on account of factors such as changes in government regulations, tax regimes, economic developments within India and the countries within which the Company conducts its business, exchange rate and interest rate movements, impact of competing products and their pricing, product demand and supply constraints.
+	    </li>
+	  <li>
+	    The past performance of the price of securities must not be relied on as a guide to their future performance.
+	    </li>
+	  <li>
+	    Should any viewer of this Web Site respond with information including feedback data such as questions, comments, suggestions, or the like regarding the content of any material on this Web Site, such information shall be deemed to be non-confidential and Marico shall deal with the same in the manner it deems fit.
+	  </li>
+	  </ul>
+	User Communications: 
+	<ul>
+	  <li>
+	    Any communications sent by the User via this website or otherwise to MARICO are on a non-confidential basis, and MARICO is under no obligation to refrain from reproducing, publishing or otherwise using them in any way or for any purpose. MARICO shall be free to use the content of any such communication, including any ideas, inventions, concepts, techniques or know-how disclosed therein, for any purpose including developing manufacturing and/or marketing goods and services.
+	    </li>
+	  <li>
+	    The User agrees to not assert any ownership right of any kind in the communication (including, but not limited to copyright, trademark, unfair competition, moral rights, or implied contract) and to waive the right to receive any financial or other consideration in connection with such communication including, but not limited to, acknowledgment of the User.
+	    </li>
+	  <li>
+	    The User shall be responsible for the content and information contained in any communication sent by the User to this website or otherwise to MARICO, including its truthfulness and accuracy.
+	    </li>
+	  </ul>
+	Governing Law and Jurisdiction: 
+	<ul>
+	  <li>
+	    This website (excluding third party linked sites) is controlled by MARICO from its offices located in Bombay, State of Maharashtra, India. By accessing this website, the User and MARICO agree that all matters relating to the access to, or use of, this website shall be governed by the laws of India applicable therein.
+	    </li>
+	  <li>
+	    The User and MARICO also agree and hereby submit to the non-exclusive jurisdiction and venue of the courts at Mumbai with respect to such matters. MARICO makes no representation that materials on this website are appropriate or available for use in other locations, and accessing them from territories where their contents are illegal is prohibited. Those who choose to access this site from other locations do soon their own initiative and are responsible for compliance with local laws.
+	    </li>
+	  </ul>
+	Severability:
+	<ul>
+	  <li>
+	    Each term and condition listed herein is severable. If any term or condition hereof is illegal, invalid or inapplicable such illegality, invalidity or inapplicability shall not affect the validity of the remaining terms and conditions.
+	    </li>
+	</ul>
+	</div> 
+      </div>
+    <%= render(:partial => "links") %>
+    
+    </div>
+  <%= render "layouts/footer.html.erb" %>
