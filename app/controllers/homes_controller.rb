@@ -86,22 +86,20 @@ class HomesController < ApplicationController
   end
   
   def thankyou
-    p params[:contact_us][:attachment]
-    p params
-    p "S"*100
-    tmp = params[:contact_us][:attachment].tempfile
-    p tmp
-    p "1"*100
-    file = File.join("/home/bijendra/workspace/setwet_style/public", params[:contact_us][:attachment].original_filename)
-    p file
-    p "2"*100
-    FileUtils.cp tmp.path, file
-     # parsing logic
+   
+    # tmp = params[:contact_us][:attachment].tempfile if params[:contact_us][:attachment].present?
     
-    FileUtils.rm file
+    # file = File.join("/home/bijendra/workspace/setwet_style/public", params[:contact_us][:attachment].original_filename)
+    
+    # FileUtils.cp tmp.path, file
+    #  # parsing logic
+    
+    # FileUtils.rm file
   
-    #avoid uploading any other images..
-    new_contact = ContactUs.create()
+    # #avoid uploading any other images..
+    # new_contact = ContactUs.create()
+    # UserMailer.voucher_email(new_contact).deliver
+    redirect_to root_url
   end  
 
 end
