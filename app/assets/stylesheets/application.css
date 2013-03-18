@@ -87,11 +87,10 @@ body {
 
 #page_1_link {
     position: absolute;
-    top: 75px;
-    right:1px;
-    width: 150px;
-    min-width: 150px;
-    height: 188px;
+    top: 65px;
+    right:-10px;
+    width: 160px;
+    min-width: 160px;    
     padding-left: 10px;
 }
 

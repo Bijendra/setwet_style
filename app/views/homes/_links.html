@@ -1,44 +1,69 @@
   <!-- <img src="/assets/setwet_logo.png" id="page_1_img_4" /> -->
   <div id="page_1_link">
-    <% if @faqs.present? %>
-      <a href="/faqs" id="link_selected">FAQS</a>    
-    <% else %>
-      <a href="/faqs" >FAQS</a>  
-    <% end %>    <br>
-    <% if @shop.present? %>
-      <a href="/shop" id="link_selected">SHOP</a>
-    <% else %>
-      <a href="/shop" >SHOP</a>
-    <% end %>  
-    <br>
-    <% if @waxes.present? %>
-      <a href="/waxes" id="link_selected">WAXES</a>
-    <% else %>
-      <a href="/waxes">WAXES</a>
-    <% end %>
-    <br>
-    <% if @gels.present? %>
-      <a href="/gels" id="link_selected">GELS</a>
-    <% else %>
-      <a href="/gels" >GELS</a>
-    <% end %>  
-    <br>
-    <% if @deos.present? %>
-      <a href="/deos" id="link_selected">DEOS</a>
-    <% else %>
-      <a href="/deos" >DEOS</a>
-    <% end %>  
-    <br>
-    <% if @styling_video.present? %>
-      <a href="/styles" id="link_selected">STYLING VIDEOS</a>
-    <% else %>
-      <a href="/styles" >STYLING VIDEOS</a>
-    <% end %>  
-    <br>
-    <% if @style_meter.present? %>
-      <a href="/style_meter" id="link_selected">STYLE METER</a>
-    <% else %>
-      <a href="/style_meter" >STYLE METER</a>
-    <% end %>  
-    <br>    
+    <table style="width:160px;">
+      <tr>
+	<td style="width:160px;">
+	  <% if @faqs.present? %>
+	  <a href="/faqs" id="link_selected">FAQS</a>    
+	  <% else %>
+	  <a href="/faqs" >FAQS</a>  
+	  <% end %>  
+	</td>
+      </tr>
+      <tr>
+	<td style="width:160px;">
+	  <% if @shop.present? %>
+	  <a href="/shop" id="link_selected">SHOP</a>
+	  <% else %>
+	  <a href="/shop" >SHOP</a>
+	  <% end %>  
+	</td>
+      </tr>
+      <tr>
+	<td style="width:160px;">
+	  <% if @waxes.present? %>
+	  <a href="/waxes" id="link_selected">WAXES</a>
+	  <% else %>
+	  <a href="/waxes">WAXES</a>
+	  <% end %>
+	</td>
+      </tr>
+      <tr>
+	<td style="width:160px;">
+	  <% if @gels.present? %>
+	  <a href="/gels" id="link_selected">GELS</a>
+	  <% else %>
+	  <a href="/gels" >GELS</a>
+	  <% end %>  
+	</td>
+      </tr>
+      <tr>
+	<td style="width:160px;">
+	  <% if @deos.present? %>
+	  <a href="/deos" id="link_selected">DEOS</a>
+	  <% else %>
+	  <a href="/deos" >DEOS</a>
+	  <% end %>  
+	</td>
+      </tr>
+      <tr>
+	<td style="width:160px;">
+	  <% if @styling_video.present? %>
+	  <a href="/styles" id="link_selected">STYLING&nbsp;VIDEOS</a>
+	  <% else %>
+	  <a href="/styles" >STYLING VIDEOS</a>
+	  <% end %>  
+	</td>
+      </tr>
+      <tr>
+	<td style="width:160px;">
+	  <% if @style_meter.present? %>
+	  <a href="/style_meter" id="link_selected">STYLE&nbsp;METER</a>
+	  <% else %>
+	  <a href="/style_meter" >STYLE METER</a>
+	  <% end %>  
+	</td>
+      </tr>
+    </table>
   </div>
+  
