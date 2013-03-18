@@ -1,7 +1,7 @@
   <div id="sitemap">
-    <a href="/sitemap">SITEMAP</a> 
-    <a href="/contact_us">CONTACT US</a>
-    <a href="/disclaimer">DISCLAIMER</a>	
+    <a href="/sitemap" <%  if(controller.action_name == "sitemap") %>style="color:#0088CC;"<% end %>>SITEMAP</a> 
+    <a href="/contact_us" <%  if(controller.action_name == "contact_us") %>style="color:#0088CC;"<% end %>>CONTACT US</a>
+    <a href="/disclaimer" <%  if(controller.action_name == "disclaimer") %>style="color:#0088CC;"<% end %>>DISCLAIMER</a>	
     <a href="https://www.facebook.com/SetWetStyling"><img src="https://s3.amazonaws.com/lmw-setwetstyling/images/fb.png"/></a>	
     <a href="http://www.youtube.com/setwetstyling"><img src="https://s3.amazonaws.com/lmw-setwetstyling/images/youtube.png" /></a>	
   </div>
