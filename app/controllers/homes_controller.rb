@@ -54,7 +54,7 @@ class HomesController < ApplicationController
       "wild" => {       
         1 => ["/assets/std4.png", "/assets/stdwax4.png", "This distinguishing style looks great on oval faces with hair of short or medium length. Suitable for all thickness and textures, this style sure expresses your individuality!", "bNUrOz3lM5U", "/assets/shaperon.png", "Mohawk", "You always stood out. Now so will your hair."],
         2 => ["/assets/std1.png", "/assets/stdwax1.png", "This seductively sexy style is great for round and oval faces that have medium length hair. Suitable for hair with thin, medium and thick textures, this style gets you adventure ready!", "q8HBIwdtUDM", "/assets/glamzone.png", "Wolver", "Like your life, here's a style that's on the edge."],
-        3 => ["/assets/std4.png", "/assets/stdwax4.png", "This intensely wild look suits round, oval, and square faces with hair of short or medium length. Suitable for all thickness and textures, all we can say is - Sexy Spikes! Sexy You!", "LP2UjkqFVeQ", "/assets/emo.png", "Spikes", "Stand-up hair for the Stand-up guy."],
+        3 => ["/assets/std4.png", "/assets/stdwax4.png", "This intensely wild look suits round, oval, and square faces with hair of short or medium length. Suitable for all thickness and textures, all we can say is - Sexy Spikes! Sexy You!", "69ywei5DDQc", "/assets/emo.png", "Spikes", "Stand-up hair for the Stand-up guy."],
         4 => ["/assets/std3.png", "/assets/stdwax3.png", "This devil-may-care look works for round and oval faces with long hair of medium texture. This style sure glams up your hair!", "OMIu7jQnq-Q", "/assets/cyclops.png", "Glamzone", "You're always on Page 3. Here's a hairstyle on the same page."]
       },
 
