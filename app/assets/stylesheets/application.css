@@ -209,7 +209,7 @@ a, u {
     top: 20px;
 }
 
-#question {
+.question {
     
     font-size: 19px;
     left: 361px;
@@ -217,7 +217,7 @@ a, u {
     color: #1F1F1F;
 }
 
-#answer {
+.answer {
     
     font-size: 19px;
     left: 361px;
@@ -225,5 +225,21 @@ a, u {
     
 
     color: #1F1F1F;
+
+}
+
+.question1 {
+    
+    font-size: 19px;
+
+    color: #1F1F1F;
+}
+
+.answer1 {
+    
+    font-size: 19px;
+    color: #1F1F1F;
+    margin-bottom: 75px;
+    margin-top: -25px;
 
 }
