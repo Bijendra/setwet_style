@@ -111,9 +111,9 @@ body {
 
 #sitemap {
     position:absolute;
-    bottom:20px;
+    top: 725px;
     right:1px;
-    width: 500px;
+    width: 430px;
     height: 30px;
 }
 
@@ -199,6 +199,7 @@ a, u {
 
 #sitemap a {
     
+
     color: #1F1F1F !important;
 }
 
@@ -213,7 +214,7 @@ a, u {
     font-size: 19px;
     left: 361px;
     top: 319.5px;
-    
+    color: #1F1F1F;
 }
 
 #answer {
@@ -222,4 +223,7 @@ a, u {
     left: 361px;
     top: 388px;
     
+
+    color: #1F1F1F;
+
 }
