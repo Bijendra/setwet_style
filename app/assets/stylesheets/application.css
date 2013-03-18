@@ -190,9 +190,14 @@ a, u {
 }
 
 .wax_link_styling {
-
+  font-style: italic;
 }
 
 .wax_type_display {
     background-image:url('screen7_bg.jpg') !important;
+}
+
+#sitemap a {
+    
+    color: #1F1F1F !important;
 }

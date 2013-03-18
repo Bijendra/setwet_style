@@ -5,8 +5,8 @@
       height: 700px;
       }
       
-      #sitemap{
-      margin: 100px 0px 0px 646px;
+      #sitemap1{
+      margin: 100px 0px 0px 519px;
       height: 515px;
       background: grey;
       width: 424px;
@@ -35,74 +35,55 @@
     
     <div id="main_div">
         <div id="content-container" style="overflow: auto;">
-	      <div id="sitemap">
+	      <div id="sitemap1">
 		<div style="font-size: 24px; margin-left: 54px; height: 39px;">
 		  Sitemap
 		  </div>
 		<div style="color: white; margin-left: 56px;">
 		  <div class="linkBackground">
-		    <a href="" class="sitemapLinks">Home</a><br/>
+		    <a href="/" class="sitemapLinks">Home</a><br/>
 		    </div>
 		  <div class="linkBackground">
-		    <a href="" class="sitemapLinks">Waxes</a>
+		    <a href="/waxes" class="sitemapLinks">Waxes</a>
+		    </div>
+		  
+		  
+		  
+		  
+		  <div class="linkBackground">
+		    <a href="/styles" class="sitemapLinks">Styling</a>
+		    </div>
+		  <div class="linkBackground">
+		    <a href="/style/casual" class="sitemapSubLink">Casual</a>
 		    </div>
 		  <div class="linkBackground" >
-		    <a href="" class="sitemapSubLink">AAAAAAAAAAA</a>
+		    <a href="/style/suave" class="sitemapSubLink">Suave</a>
 		    </div>
 		  <div class="linkBackground" >
-		    <a href="" class="sitemapSubLink">BBBBBBB</a>
-		    </div>
-		  <div class="linkBackground">
-		    <a href="" class="sitemapSubLink">BBBBBBB</a>
-		    </div>
-		  
-		  
-		  
-		  <div class="linkBackground">
-		    <a href="" class="sitemapLinks">Styling</a>
-		    </div>
-		  <div class="linkBackground">
-		    <a href="" class="sitemapSubLink">AAAAAAAAAAA</a>
+		    <a href="/style/wild" class="sitemapSubLink">Wild</a>
 		    </div>
 		  <div class="linkBackground" >
-		    <a href="" class="sitemapSubLink">BBBBBBB</a>
+		    <a href="/style/wild" class="sitemapSubLink">Office</a>
 		    </div>
-		  <div class="linkBackground" >
-		    <a href="" class="sitemapSubLink">BBBBBBB</a>
+		  
+		  <div class="linkBackground">
+		    <a href="/deos" class="sitemapLinks">Deos</a>
 		    </div>
-		  <div class="linkBackground" >
-		    <a href="" class="sitemapSubLink">BBBBBBB</a>
+		  <div class="linkBackground">
+		    <a href="/gels" class="sitemapLinks">Gels</a>
 		    </div>
+		  
 		  
 		  
 		  <div class="linkBackground">
-		    <a href="" class="sitemapLinks">Products</a>
+		    <a href="/shop" class="sitemapLinks">Shop</a>
 		    </div>
-		  <div class="linkBackground" >
-		    <a href="" class="sitemapSubLink">AAAAAAAAAAA</a>
-		    </div>
-		  <div class="linkBackground" >
-		    <a href="" class="sitemapSubLink">BBBBBBB</a>
-		    </div>
-		  <div class="linkBackground" >
-		    <a href="" class="sitemapSubLink">BBBBBBB</a>
-		    </div>
-		  
+		 
 		  
 		  <div class="linkBackground">
-		    <a href="" class="sitemapLinks">Shop</a>
-		    </div>
-		  <div class="linkBackground">
-		    <a href="" class="sitemapSubLink">AAAAAAAAAAA</a>
+		    <a href="faqs" class="sitemapLinks">FAQs</a>
 		    </div>
 		  
-		  
-		  <div class="linkBackground">
-		    <a href="" class="sitemapLinks">FAQs</a>
-		    </div>
-		  <div class="linkBackground">
-		    <a href="" class="sitemapSubLink">faq</a>
-		    </div>
 		  
 		  
 		  </div>
@@ -110,3 +91,4 @@
 	          </div>
 
 	</div>
+<%= render "layouts/footer.html.erb" %>
