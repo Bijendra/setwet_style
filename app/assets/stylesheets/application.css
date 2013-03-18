@@ -244,3 +244,10 @@ a, u {
     font-style: italic;
 
 }
+
+.dis-style {
+    font-size: 15px;
+    color: #1F1F1F;
+   
+    font-style: italic;
+}
