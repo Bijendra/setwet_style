@@ -1,5 +1,6 @@
 class HomesController < ApplicationController
   require 'fileutils'
+
   def index
   end
   
