@@ -248,13 +248,34 @@
     <!-- Carousel nav -->
     <a href="#myCarousel" data-slide="prev" style="position:absolute;z-index:20;top:370px;left:-25px;"><img src="/assets/left.png"/></a>
     <a href="#myCarousel" data-slide="next" style="position:absolute;z-index:20;top:370px;left:535px;"><img src="/assets/right.png"/></a>
+  </div>  
+  <div style="position:absolute; display: block; z-index: 100; top: 80px; left: 120px;display:none;" id="large_youtube"></div>
+  
+  <div id="big_video_div" style="position:absolute;left:7%;px;top:85px;z-index:100;border:5px solid #fafafa;display:none;"> 
+    <div style="height:500px;width:750px;background:#e0e0e0;padding:20px;">    
+      <div style="position:absolute;left:770px;top:-19px;z-index:500;width:36px">
+	<img onclick="hide_video();" style="cursor:pointer;" src="/assets/cross-button.png" />                  
+      </div>
+      <div id="afterVideoOption" style="position:relative;z-index:30;">
+	<img id="afterVideoImg" src="<%= @data[1][4] %>" style="width:685px;margin-left:35px;"/>      
+	<img src="/assets/reply-button.png" style="position:absolute;bottom:20px;left:325px;cursor:pointer;" onclick="replayVideo();"/>      
+      </div>
+    </div> 
   </div>
-  
-  <div style="position:absolute; display: block; z-index: 5; top: 80px; left: 120px;display:none;" id="large_youtube"></div>
-  
+
+
+
 </body>
 
 <script type="text/javascript">
+var videoData = {};
+<%
+   @data.each do|value|
+%>
+  videoData['<%= value[3] %>'] = "<%= value[4] %>";
+<% end %>
+
+
 
 var video_id = "";
 // 2. This code loads the IFrame Player API code asynchronously.
@@ -295,6 +316,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
      else if(event.data == YT.PlayerState.ENDED){
       document.getElementById('large_youtube').style.display = "none";
+      document.getElementById('big_video_div').style.display = "block";     
      }
     }
 
@@ -309,6 +331,18 @@ function start_video(vid) {
     document.getElementById('large_youtube').style.display = "";
     onYouTubeIframeAPIReady();
     document.getElementById('large_youtube').src = "http://www.youtube.com/embed/"+vid+"?wmode=transparent";
+    document.getElementById('big_video_div').style.display = "none";     
+    document.getElementById('afterVideoImg').src = videoData[vid];
+}
+
+function hide_video() { 
+    document.getElementById('big_video_div').style.display = 'none'; 
+}
+
+function replayVideo() {
+    document.getElementById('big_video_div').style.display = "none"; 
+    player.seekTo(0, true);
+    player.playVideo();
 }
 
 
