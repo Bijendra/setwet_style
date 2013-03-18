@@ -219,10 +219,10 @@ function start_video(){
 
 function hide_video(state){
    var div = document.getElementById("thevideo");
-   // var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-   //div.style.display = state == 'hide' ? 'none' : '';
-   //func = state == 'hide' ? 'pauseVideo' : 'playVideo';
-   // iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+   //var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+   div.style.display = state == 'hide' ? 'none' : '';
+   func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+   //iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
    // $("#btn_cross").css("display","none");
    document.getElementById("gel_main_div").style.display = "";
    document.getElementById("gel_text").style.display = "";
