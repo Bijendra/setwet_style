@@ -228,11 +228,11 @@ a, u {
 
 }
 
-.question1 {
-    
+.question1 { 
     font-size: 19px;
+    color: #5291FF;
+    font-style: italic;
 
-    color: #1F1F1F;
 }
 
 .answer1 {
@@ -241,5 +241,6 @@ a, u {
     color: #1F1F1F;
     margin-bottom: 75px;
     margin-top: -25px;
+    font-style: italic;
 
 }
