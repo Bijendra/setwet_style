@@ -2,6 +2,7 @@ class HomesController < ApplicationController
   require 'fileutils'
 
   def index
+
   end
   
   def faqs
@@ -12,8 +13,7 @@ class HomesController < ApplicationController
     @shop = true
   end
 
-  def home
-    @waxes = true
+  def home    
   end
 
   def gels
@@ -29,7 +29,7 @@ class HomesController < ApplicationController
   end 	
 
   def styles
-    @waxes = true
+    @styling_video = true
   end
 
   def style_detail

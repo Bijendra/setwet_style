@@ -131,7 +131,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       //    the player should play for six seconds and then stop.
     var done = false;
     function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING) {
+    if((event.data == YT.PlayerState.PLAYING) || (event.data == YT.PlayerState.BUFFERING) || (event.data == YT.PlayerState.CUED)) {
       // show_video();
       document.getElementById('large_youtube').style.width = "750px";
       document.getElementById('large_youtube').style.height = "600px";

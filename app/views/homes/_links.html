@@ -29,6 +29,12 @@
       <a href="/deos" >DEOS</a>
     <% end %>  
     <br>
+    <% if @styling_video.present? %>
+      <a href="/styles" id="link_selected">STYLING VIDEOS</a>
+    <% else %>
+      <a href="/styles" >STYLING VIDEOS</a>
+    <% end %>  
+    <br>
     <% if @style_meter.present? %>
       <a href="/style_meter" id="link_selected">STYLE METER</a>
     <% else %>
