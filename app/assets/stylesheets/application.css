@@ -199,5 +199,31 @@ a, u {
 
 #sitemap a {
     
+
+    color: #1F1F1F !important;
+}
+
+#move_down {
+    left: 1px;
+    position: absolute;
+    top: 20px;
+}
+
+#question {
+    
+    font-size: 19px;
+    left: 361px;
+    top: 319.5px;
     color: #1F1F1F;
+}
+
+#answer {
+    
+    font-size: 19px;
+    left: 361px;
+    top: 388px;
+    
+
+    color: #1F1F1F;
+
 }
