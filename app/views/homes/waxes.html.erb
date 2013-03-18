@@ -293,8 +293,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     width: '750',
     videoId: video_id,
     events: {
-    'onReady': onPlayerReady,
-    'onStateChange': onPlayerStateChange
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
     }
     });
     }
@@ -341,7 +341,7 @@ function hide_video() {
 
 function replayVideo() {
     document.getElementById('big_video_div').style.display = "none"; 
-    start_video(video_id);
+  start_video(video_id);
 }
 
 
