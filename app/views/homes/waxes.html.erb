@@ -289,7 +289,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     var done = false;
     function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.PLAYING) {
-            
+      document.getElementById('large_youtube').style.display = "";    
     } else if(event.data == YT.PlayerState.PAUSED) {
        document.getElementById('large_youtube').style.display = "none";    
     }
