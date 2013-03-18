@@ -229,17 +229,17 @@ a, u {
 }
 
 .question1 { 
-    font-size: 19px;
+    font-size: 17px;
     color: #5291FF;
     font-style: italic;
-
+    font-weight: bold;
 }
 
 .answer1 {
     
-    font-size: 19px;
+    font-size: 15px;
     color: #1F1F1F;
-    margin-bottom: 75px;
+    margin-bottom: 44px;
     margin-top: -25px;
     font-style: italic;
 
