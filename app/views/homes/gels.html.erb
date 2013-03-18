@@ -162,14 +162,13 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
      //    the player should play for six seconds and then stop.
      var done = false;
      function onPlayerStateChange(event) {
-     if (event.data == YT.PlayerState.PLAYING) {     
-      document.getElementById('thevideo').style.width = "750px";
-      document.getElementById('thevideo').style.height = "600px";
-      document.getElementById('thevideo').style.top = "80px";
-      document.getElementById('thevideo').style.left = "120px";            
+     if((event.data == YT.PlayerState.PLAYING) || (event.data == YT.PlayerState.BUFFERING) || (event.data == YT.PlayerState.CUED)) {           
+       if(document.getElementById('thevideo').style.display == "none")
+          document.getElementById('thevideo').style.display = "";
     } else if(event.data == YT.PlayerState.PAUSED) {
         document.getElementById('thevideo').style.display = "none";
-        hide_video('hide');  
+        stopVideo();
+        // hide_video('hide');  
     }
      else if(event.data == YT.PlayerState.ENDED){
         document.getElementById('thevideo').style.display = "none";
