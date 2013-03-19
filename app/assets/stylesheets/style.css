@@ -1,7 +1,7 @@
 @font-face
 {
        font-family: 'OratorStd-Slanted';
-           src:  URL('OratorStd-Slanted.eot') format('embedded-opentype');
+       src:  URL('OratorStd-Slanted.eot') format('embedded-opentype');
        src: URL('OratorStd-Slanted.otf'), URL('OratorStd-Slanted.ttf');
 }
 
