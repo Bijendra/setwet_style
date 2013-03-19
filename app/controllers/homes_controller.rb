@@ -115,8 +115,14 @@ class HomesController < ApplicationController
   end
   
   def thankyou
-   
-    # tmp = params[:contact_us][:attachment].tempfile if params[:contact_us][:attachment].present?
+    p params
+    p "X"*100
+
+    if params[:contact_us].present?
+       @contact_us = ContactUs.create(full_name: params[:contact_us][:full_name], 
+       email: params[:contact_us][:email], phone_no: params[:contact_us][:phone_no],
+       address: params[:contact_us][:address],contact_us: params[:contact_us][:country],
+       phone_no: params[:contact_us][:issue_type])    # tmp = params[:contact_us][:attachment].tempfile if params[:contact_us][:attachment].present?
     
     # file = File.join("/home/bijendra/workspace/setwet_style/public", params[:contact_us][:attachment].original_filename)
     
@@ -127,7 +133,9 @@ class HomesController < ApplicationController
   
     # #avoid uploading any other images..
     # new_contact = ContactUs.create()
-    # UserMailer.voucher_email(new_contact).deliver
+      image= params[:contact_us][:attachment].tempfile if params[:contact_us][:attachment].present?
+      UserMailer.contact_form(@contact_us, image).deliver
+    end
     redirect_to root_url
   end  
 
