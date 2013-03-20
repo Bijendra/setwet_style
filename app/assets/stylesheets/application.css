@@ -124,13 +124,13 @@ body {
     position:absolute;
     top: 735px;
     right:1px;
-    width: 600px;
+    width: 620px;
     height: 30px;
 }
 
 #sitemap a {
     font-style: italic;
-    font-size: 12px;
+    font-size: 14px;
     font-family: setwet;
     line-height: 30px;
     text-decoration: none;    
