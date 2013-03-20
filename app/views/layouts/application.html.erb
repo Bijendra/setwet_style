@@ -7,6 +7,15 @@
     <%= (controller.action_name == "index" || controller.action_name == "home")? "setwet" : controller.action_name.capitalize %>
     <% end %>
   </title>
+  <meta property="og:site_name" content="SetWet Styling" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="SetWet | Irresistible style" />
+  <meta property="og:description" content="Set Wet Styling enables you to reach out to one of the most sought after range of international styling products." />
+  <meta property="og:url" content="http://www.setwetstyling.com" />
+  <meta property="og:url" content="http://www.setwetstyling.com/assets/bg_1.jpg" />
+  
+
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -21,6 +30,7 @@
   })();
 
 </script>
+
 </head>
 <body>
 <div id="main">
