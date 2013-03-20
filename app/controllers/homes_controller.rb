@@ -51,6 +51,10 @@ class HomesController < ApplicationController
     @styling_video = true
   end
 
+  def download_ringtone
+    send_file("./public/TVCTrack.mp3")
+  end
+
   def style_detail
     @styling_video = true
     # @waxes = true

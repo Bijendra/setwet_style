@@ -18,10 +18,10 @@
     <img style="width:350px;height:160px;" src="<%= @data[1][0] %>" id="video_text_bg">                  
   </div>
   <div style="position:absolute;left:401px;top:191px;z-index:5">
-    <div style="font-style:italic;font-size:20px;color:#FAFAFA;" id=""><%= @meta[0] %></div>                  
+    <div style="font-style:italic;font-size:22px;font-weight:bold;font-family:setwet;color:#FAFAFA;" id=""><%= @meta[0] %></div>                  
   </div>
   <div style="position:absolute;left:671px;top:491px;z-index:auto">
-    <p style="color:#FFFFFF;font-style:italic;width:190px;" id="video_desc">
+    <p style="color:#FFFFFF;font-style:italic;width:190px;font-family:setwet;" id="video_desc">
       <%= @data[1][2] %>
     </p>      
   </div>
@@ -30,10 +30,10 @@
   </div>
  
   <div style="position:absolute;left:521px;top:172px;z-index:5">
-    <div style="font-style:italic;font-size:30px;color:#000000;" id="video_name"><%= @data[1][5] %></div>                  
+    <div style="font-style:italic;font-size:30px;color:#000000;font-family:setwet;" id="video_name"><%= @data[1][5] %></div>                  
   </div>
   <div style="position:absolute;left:524px;top:200px;z-index:5">
-    <div style="font-style:italic;font-size:15px;color:#29b25a;height:20px;width:340px;" id="video_short_desc"><%= @data[1][6] %></div>              
+    <div style="font-style:italic;font-size:15px;color:#29b25a;height:20px;width:340px;font-family:setwet;" id="video_short_desc"><%= @data[1][6] %></div>              
   </div>
   <div style="position:absolute;left:535px;top:511px;z-index:5">
     <img src="<%= @data[1][1] %>" id="selected_wax_img">                  
@@ -47,6 +47,12 @@
   </div>
 </a>
 
+<a href="/howto">
+  <div style="position:absolute;left:420px;top:571px;z-index:14;font-family:setwet;font-style:italic;font-weight:bold;">
+    BACK
+    <img src="/assets/back.png">                  
+  </div>
+</a>
 
 <div id="big_video_div" style="position:absolute;left:7%;px;top:85px;z-index:7;border:5px solid #fafafa;display:none;"> 
   <div style="height:500px;width:750px;background:#e0e0e0;padding:20px;">    

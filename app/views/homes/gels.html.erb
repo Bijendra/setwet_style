@@ -50,19 +50,14 @@ html,body{height:100%;}
     <div style='position:absolute;left:721px;top:435px;z-index:10'>
       <img id="" src="/assets/green_band.png" />	
     </div>
-    <div style='position:absolute;left:872px;top:302px;z-index:4'>			
-      <a id="setwet_home" class="" style="" href="/"> 
-	<img id="deo_setwet" src="/assets/setwet_logo.png" />
-      </a>	
-    </div>
     <div style='position:absolute;left:448px;top:458px;z-index:0'>
-      <a id="gel_coolhead" style="color:#1b9ad3;font-style: italic;font-weight:bold;font-family:setwet;font-size:16px;" href="javascript:void(0)" onclick="start_carousel(this.id)">&nbsp;SET WET <br/> COOL HOLD</a>
+      <a id="gel_coolhead" style="color:#1b9ad3;font-style: italic;font-weight:bold;text-decoration:none;font-family:setwet;font-size:16px;" href="javascript:void(0)" onclick="start_carousel(this.id)">&nbsp;SET WET <br/> COOL HOLD</a>
     </div>
     <div style='position:absolute;left:731px;top:458px;z-index:0'>
-      <a id="gel_vhold" style="color:#1b9ad3;font-style: italic;font-weight:bold;font-family:setwet;font-size:16px;"href="javascript:void(0)" onclick="start_carousel(this.id)">&nbsp;&nbsp;&nbsp;SET WET <br/> VERTICAL HOLD</a>		
+      <a id="gel_vhold" style="color:#1b9ad3;font-style: italic;font-weight:bold;font-family:setwet;font-size:16px;text-decoration:none;"href="javascript:void(0)" onclick="start_carousel(this.id)">&nbsp;&nbsp;&nbsp;SET WET <br/> VERTICAL HOLD</a>		
     </div>
     <div style='position:absolute;left:604px;top:458px;z-index:0'>
-      <a id="gel_swlook" style="color:#1b9ad3;font-style: italic;font-weight:bold;font-family:setwet;font-size:16px;"href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET<br/>WET LOOK</a>		
+      <a id="gel_swlook" style="color:#1b9ad3;font-style: italic;font-weight:bold;font-family:setwet;font-size:16px;text-decoration:none;"href="javascript:void(0)" onclick="start_carousel(this.id)">SET WET<br/>WET LOOK</a>		
     </div>
 
     <div id="blue_gel_pop" style='position:absolute;left:451px;top:312px;z-index:10' onmouseover="$('#red_popup').stop(true, true).fadeIn();" onmouseout="$('#red_popup').stop(true, true).fadeOut();">
@@ -115,6 +110,19 @@ html,body{height:100%;}
     <a href="javascript:void(0)" onclick="start_video()"><img src="http://img.youtube.com/vi/hp6AxDgV4rU/default.jpg" id="deo_video" /> </a>
   </div>
 
+  <div  style="position:absolute;left:889px;width:150px;top:515px;z-index:10;font-style: italic;font-size:14px;font-family:setwet;font-weight:bold;">
+    <a href="/download_ringtone" style="text-decoration:none;">
+      DOWNLOAD THE "BURI NAJAR WALE" RINGTONE HERE<br>
+      <img src="/assets/ringtone.png" style="width:30px;margin-left:45px;" /> 
+    </a>
+  </div>
+  <div style='position:absolute;left:872px;top:302px;z-index:4'>			
+    <a id="setwet_home" class="" style="" href="/"> 
+      <img id="deo_setwet" src="/assets/setwet_logo.png" />
+    </a>	
+  </div>
+
+  
 <% if(false) %>  
   <div id="btn_cross" style="position:absolute;left:854px;top: 86px;z-index:500; display:none">
     <img onclick="hide_video('hide');" style="height:36px;width:37px;cursor:pointer;" src="/assets/cross-button.png" />                  
@@ -165,14 +173,14 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
      if((event.data == YT.PlayerState.PLAYING) || (event.data == YT.PlayerState.BUFFERING) || (event.data == YT.PlayerState.CUED)) {           
        if(document.getElementById('thevideo').style.display == "none")
           document.getElementById('thevideo').style.display = "";
-    } else if(event.data == YT.PlayerState.PAUSED) {
-        document.getElementById('thevideo').style.display = "none";
+      } else if(event.data == YT.PlayerState.PAUSED) {
+        document.getElementById('thevideo').style.display = "none";        
+        hide_video('hide');  
         stopVideo();
-        // hide_video('hide');  
-    }
+      }
      else if(event.data == YT.PlayerState.ENDED){
         document.getElementById('thevideo').style.display = "none";
-        hide_video('hide');
+        hide_video('hide')
      }
     }
     function stopVideo() {
@@ -206,7 +214,7 @@ $('#myCarousel').carousel('cycle');
    
 
 function start_video(){
-	flag = 1;
+     flag = 1;
    document.getElementById("gel_bg").style.display = "none";
    document.getElementById("gel_bg2").style.display = "block";
    document.getElementById("gel_main_div").style.display = "none";
@@ -220,10 +228,10 @@ function start_video(){
 }
 
 function hide_video(state){
-   var div = document.getElementById("thevideo");
-   //var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
-   div.style.display = state == 'hide' ? 'none' : '';
-   func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+   // var div = document.getElementById("thevideo");
+   // var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+   // div.style.display = state == 'hide' ? 'none' : '';
+   // func = state == 'hide' ? 'pauseVideo' : 'playVideo';
    //iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
    // $("#btn_cross").css("display","none");
    document.getElementById("gel_main_div").style.display = "";
