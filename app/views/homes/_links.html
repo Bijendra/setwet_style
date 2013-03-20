@@ -1,24 +1,12 @@
+<%
+   style_str = ""
+   style_str = style if(defined? style)
+%>
+
+
   <!-- <img src="/assets/setwet_logo.png" id="page_1_img_4" /> -->
-  <div id="page_1_link">
+  <div id="page_1_link" style="<%= style_str %>">
     <table style="width:160px;">
-      <tr>
-	<td style="width:160px;">
-	  <% if @faqs.present? %>
-	  <a href="/faqs" id="link_selected">FAQS</a>    
-	  <% else %>
-	  <a href="/faqs" >FAQS</a>  
-	  <% end %>  
-	</td>
-      </tr>
-      <tr>
-	<td style="width:160px;">
-	  <% if @shop.present? %>
-	  <a href="/shop" id="link_selected">SHOP</a>
-	  <% else %>
-	  <a href="/shop" >SHOP</a>
-	  <% end %>  
-	</td>
-      </tr>
       <tr>
 	<td style="width:160px;">
 	  <% if @waxes.present? %>
@@ -48,19 +36,37 @@
       </tr>
       <tr>
 	<td style="width:160px;">
-	  <% if @styling_video.present? %>
-	  <a href="/how-to" id="link_selected">STYLING&nbsp;VIDEOS</a>
+	  <% if @style_meter.present? %>
+	  <a href="/style_meter" id="link_selected">STYLE&nbsp;METER</a>
 	  <% else %>
-	  <a href="/how-to" >STYLING VIDEOS</a>
+	  <a href="/style_meter" >STYLE METER</a>
 	  <% end %>  
 	</td>
       </tr>
       <tr>
 	<td style="width:160px;">
-	  <% if @style_meter.present? %>
-	  <a href="/style_meter" id="link_selected">STYLE&nbsp;METER</a>
+	  <% if @styling_video.present? %>
+	  <a href="/howto" id="link_selected">STYLING&nbsp;VIDEOS</a>
 	  <% else %>
-	  <a href="/style_meter" >STYLE METER</a>
+	  <a href="/howto" >STYLING VIDEOS</a>
+	  <% end %>  
+	</td>
+      </tr>
+      <tr>
+	<td style="width:160px;">
+	  <% if @shop.present? %>
+	  <a href="/shop" id="link_selected">SHOP</a>
+	  <% else %>
+	  <a href="/shop" >SHOP</a>
+	  <% end %>  
+	</td>
+      </tr>
+      <tr>
+	<td style="width:160px;">
+	  <% if @faqs.present? %>
+	  <a href="/faqs" id="link_selected">FAQS</a>    
+	  <% else %>
+	  <a href="/faqs" >FAQS</a>  
 	  <% end %>  
 	</td>
       </tr>

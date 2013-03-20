@@ -52,7 +52,8 @@ class HomesController < ApplicationController
   end
 
   def style_detail
-    @waxes = true
+    @styling_video = true
+    # @waxes = true
       #    ["NAME", "bg image"]
     cat_data = {
       "casual" => ["CASUAL", "/assets/std6.png"],
