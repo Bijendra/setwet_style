@@ -13,7 +13,7 @@ SetwetStyle::Application.routes.draw do
   match "/waxes" =>"homes#waxes"
   match "/styles" =>"homes#styles"
   match "/howto" =>"homes#styles"
-  match "/style/:name" =>"homes#style_detail"
+  match "/howto/:name" =>"homes#style_detail"
 
   match "/wax_range" => "homes#wax_range"
   match "/style_meter" => "homes#style_meter"
