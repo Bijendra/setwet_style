@@ -28,7 +28,7 @@ class HomesController < ApplicationController
     @waxes = true
  # ["bg image for desc","wax image", "desc", "youtube_video_id", "image for after video display", "short discription"]
     @data = [
-        ["/assets/std4.png", "/assets/stdwax4.png", "This forever-suave look suits oval and round faces that have short hair of thin or medium texture. Donne this style and you are sure to be a pop-icon!", "8vkk4znM4Kw", "/assets/texture-crop.png", "Texture Crop", "Finally, a hairstyle that will go with your moves."],
+        ["/assets/std4.png", "/assets/stdwax4.png", "This forever-casual look suits oval and round faces that have short hair of thin or medium texture. Donne this style and you are sure to be a pop-icon!", "8vkk4znM4Kw", "/assets/texture-crop.png", "Texture Crop", "Finally, a hairstyle that will go with your moves."],
         ["/assets/std3.png", "/assets/stdwax3.png", "This fun and trendy look suits round and oval faces with medium and long hair of thin or medium texture. It's always a blast when you emo it up!", "oCP2abhZ6hE", "/assets/emo.png", "Emo", "Your life is always a blast. Then what about your hair?"],
         ["/assets/std2.png", "/assets/stdwax2.png", "The perfect look for round and oval faces with short hair of thin or medium texture. This styles gears you up for the wilderness!", "XCJ5ta6XPHM", "/assets/emo.png", "Cyclops", "Let your hair show your wild side."],
         ["/assets/std1.png", "/assets/stdwax1.png", "The hot and happening office look for round, oval and square faces with short hair of medium or thick texture - flawless styling, always!", "tlJhZ4GQnEU", "/assets/shaperon.png", "Shaperon", "A flawless style for a flawless attitude."],       
@@ -66,7 +66,7 @@ class HomesController < ApplicationController
  # ["bg image for desc","wax image", "desc", "youtube_video_id", "image for after video display", "short discription"]
     data = {
       "casual" => {       
-        1 => ["/assets/std4.png", "/assets/stdwax4.png", "This forever-suave look suits oval and round faces that have short hair of thin or medium texture. Donne this style and you are sure to be a pop-icon!", "8vkk4znM4Kw", "/assets/texture-crop.png", "Texture Crop", "Finally, a hairstyle that will go with your moves."],
+        1 => ["/assets/std4.png", "/assets/stdwax4.png", "This forever-casual look suits oval and round faces that have short hair of thin or medium texture. Donne this style and you are sure to be a pop-icon!", "8vkk4znM4Kw", "/assets/texture-crop.png", "Texture Crop", "Finally, a hairstyle that will go with your moves."],
         2 => ["/assets/std3.png", "/assets/stdwax3.png", "This fun and trendy look suits round and oval faces with medium and long hair of thin or medium texture. It's always a blast when you emo it up!", "oCP2abhZ6hE", "/assets/emo.png", "Emo", "Your life is always a blast. Then what about your hair?"],
         3 => ["/assets/std2.png", "/assets/stdwax2.png", "The perfect look for round and oval faces with short hair of thin or medium texture. This styles gears you up for the wilderness!", "XCJ5ta6XPHM", "/assets/emo.png", "Cyclops", "Let your hair show your wild side."],
         4 => ["/assets/std1.png", "/assets/stdwax1.png", "The hot and happening office look for round, oval and square faces with short hair of medium or thick texture - flawless styling, always!", "tlJhZ4GQnEU", "/assets/shaperon.png", "Shaperon", "A flawless style for a flawless attitude."]
