@@ -171,12 +171,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
      var done = false;
      function onPlayerStateChange(event) {
      if((event.data == YT.PlayerState.PLAYING) || (event.data == YT.PlayerState.BUFFERING) || (event.data == YT.PlayerState.CUED)) {           
-       if(document.getElementById('thevideo').style.display == "none")
-          document.getElementById('thevideo').style.display = "";
+
       } else if(event.data == YT.PlayerState.PAUSED) {
         document.getElementById('thevideo').style.display = "none";        
         hide_video('hide');  
-        stopVideo();
+        // stopVideo();
       }
      else if(event.data == YT.PlayerState.ENDED){
         document.getElementById('thevideo').style.display = "none";
