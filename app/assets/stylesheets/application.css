@@ -20,6 +20,15 @@ body {
     background: #000000;
 }
 
+@font-face {
+    font-family: 'setwet';
+    src: url('OratorStd.eot');
+    src: url('OratorStd.ttf') format('truetype'), url('OratorStd.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 #main {
     position: relative;
     width: 1024px;
@@ -88,18 +97,20 @@ body {
 
 #page_1_link {
     position: absolute;
-    top: 65px;
-    right:-10px;
+    top: 75px;
+    right: -5px;
     width: 160px;
     min-width: 160px;    
     padding-left: 10px;
+    font-family: setwet;
 }
 
 #page_1_link a {
     font-style: italic;
-    font-size: 18px;
-    font-family: Arial,Arial,Helvetica,sans-serif;
-    line-height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: setwet;
+    line-height: 28px;
     text-decoration: none;
     color: #1F1F1F;
 }
@@ -113,22 +124,31 @@ body {
     position:absolute;
     top: 735px;
     right:1px;
-    width: 600px;
+    width: 650px;
     height: 30px;
 }
 
 #sitemap a {
     font-style: italic;
-    font-size: 12px;
-    font-family: Arial,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-family: setwet;
     line-height: 30px;
-    text-decoration: none;
+    text-decoration: none;    
     margin: 0px 10px;
 }
 
-#sitemap img {
+
+#social {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    width: 80px;
+}
+
+#social img {
     width: 25px;
     height: 25px;
+    margin: 0px 10px 0px 0px;
 }
 
 .back_ground_deos {
@@ -191,6 +211,8 @@ a, u {
 
 .wax_link_styling {
   font-style: italic;
+  font-family: setwet;
+  font-weight: bold;
 }
 
 .wax_type_display {
@@ -232,16 +254,16 @@ a, u {
     font-size: 17px;
     color: #FFFFFF;
     font-style: italic;
-    font-weight: bold;
+    font-family: setwet;
 }
 
-.answer1 {
-    
+.answer1 {    
     font-size: 15px;
     color: #1F1F1F;
     margin-bottom: 44px;
     margin-top: -25px;
     font-style: italic;
+    font-family: setwet;
 
 }
 
