@@ -8,7 +8,7 @@
   <img class="rightBtn" style="position: absolute; top: 585px; left: 858px;" src="/assets/right.png" onclick="rightClick();"></img>
 
 
-  <img class="styleMeterImage" style="margin-left: 32px; margin-top: 49px;" src="/assets/Style_Meter.png"></img>
+  <img class="styleMeterImage" style="margin-left: 314px; margin-top: 257px;" src="/assets/Style_Meter.png"></img>
   </div> 	
 <a href="/">
   <div class="open_popup" style='position:absolute;left:871px;top:295px;z-index:'>     <img id="" src="/assets/setwet_logo.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
@@ -21,20 +21,22 @@
 		//alert(click);
 		click = click+1;
 		if(click == 1 ){
-			//$(".styleMeterImage").hide();
+			$(".styleMeterImage").hide();
 			$(".styleMeterImage").attr('src',"/assets/style-meter1.png");
 			$('.leftBtn').show();
 			
-			$(".styleMeterImage").css({ marginLeft: '281px'});
-			$(".styleMeterImage").css({ marginTop: '278px'});
+			//$(".styleMeterImage").css({ marginLeft: '281px'});
+			//$(".styleMeterImage").css({ marginTop: '278px'});
 			
-			//$(".styleMeterImage").show();
+			$(".styleMeterImage").show();
 		}
 		if(click == 2 ){
+			$(".styleMeterImage").hide();
 			$(".styleMeterImage").attr('src',"/assets/style-meter2.png");
-			$(".styleMeterImage").css({ marginLeft: '304px'});
-			$(".styleMeterImage").css({ marginTop: '250px'});
+			//$(".styleMeterImage").css({ marginLeft: '304px'});
+			//$(".styleMeterImage").css({ marginTop: '250px'});
 			$('.rightBtn').hide();
+			$(".styleMeterImage").show();
 		}
 		
 	}
@@ -42,16 +44,20 @@
 	function leftClick(){
 		click = click - 1;		
 		if(click == 0 ){
+			$(".styleMeterImage").hide();
 			$(".styleMeterImage").attr('src',"/assets/Style_Meter.png");
-			$(".styleMeterImage").css({ marginLeft: '32px'});
-			$(".styleMeterImage").css({ marginTop: '49px'});
+			//$(".styleMeterImage").css({ marginLeft: '32px'});
+			//$(".styleMeterImage").css({ marginTop: '49px'});
 			$('.leftBtn').hide();
+			$(".styleMeterImage").show();
 		}
 		if(click == 1 ){
+			$(".styleMeterImage").hide();
 			$(".styleMeterImage").attr('src',"/assets/style-meter1.png");
-			$(".styleMeterImage").css({ marginLeft: '281px'});
-			$(".styleMeterImage").css({ marginTop: '278px'});
+			//$(".styleMeterImage").css({ marginLeft: '281px'});
+			//$(".styleMeterImage").css({ marginTop: '278px'});
 			$('.rightBtn').show();
+			$(".styleMeterImage").show();
 		}
 		
 		
