@@ -52,7 +52,7 @@ class HomesController < ApplicationController
   end
 
   def download_ringtone
-    send_file("./public/TVCTrack.mp3")
+    send_file("./public/BuriNazarWale.mp3")
   end
 
   def style_detail
