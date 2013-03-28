@@ -16,7 +16,7 @@ SetwetStyle::Application.routes.draw do
   match "/howto/:name" =>"homes#style_detail"
   match "/download_ringtone" =>"homes#download_ringtone"
   match "/wax_range" => "homes#wax_range"
-  match "/style_meter" => "homes#style_meter"
+  match "/product_guide" => "homes#style_meter"
   match "/contact_us" => "homes#contact_us"
   match "/sitemap" => "homes#sitemap"
   match "/disclaimer" => "homes#disclaimer"

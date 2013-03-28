@@ -3,10 +3,61 @@
     <%= render "links" %>
   </div> 
   <%= render "layouts/footer.html.erb" %>
-  <img style="margin-left: 120px; margin-top: 60px;" src="/assets/Style_Meter.png"></img>
+  
+  <img class="leftBtn" style="display: none ;position: absolute; top: 524px; left: 276px;" src="/assets/left.png" onclick="leftClick();"></img>
+  <img class="rightBtn" style="position: absolute; top: 524px; left: 858px;" src="/assets/right.png" onclick="rightClick();"></img>
+
+
+  <img class="styleMeterImage" style="margin-left: 314px; margin-top: 206px;" src="/assets/style-meter1.png"></img>
   </div> 	
 <a href="/">
   <div class="open_popup" style='position:absolute;left:871px;top:295px;z-index:'>     <img id="" src="/assets/setwet_logo.png" onclick="" class="" title="Image title" style="" alt="Image Alt value"/>  
   </div>
 </a>
 </div>
+<script>
+	var click = 0;
+	function rightClick(){
+		//alert(click);
+		click = click+1;
+		if(click == 1 ){
+			//$(".styleMeterImage").hide();
+			$(".styleMeterImage").attr('src',"/assets/style-meter2.png");
+			$('.leftBtn').show();
+			$('.rightBtn').hide();
+			//$(".styleMeterImage").show();
+		}
+		if(click == 2 ){
+			$(".styleMeterImage").hide();
+			$(".styleMeterImage").attr('src',"/assets/style-meter2.png");
+			//$(".styleMeterImage").css({ marginLeft: '304px'});
+			//$(".styleMeterImage").css({ marginTop: '250px'});
+			$('.rightBtn').hide();
+			$(".styleMeterImage").show();
+		}
+		
+	}
+	
+	function leftClick(){
+		click = click - 1;		
+		if(click == 0 ){
+			//$(".styleMeterImage").hide();
+			$(".styleMeterImage").attr('src',"/assets/style-meter1.png");
+			//$(".styleMeterImage").css({ marginLeft: '32px'});
+			//$(".styleMeterImage").css({ marginTop: '49px'});
+			$('.leftBtn').hide();
+			$('.rightBtn').show();
+			//$(".styleMeterImage").show();
+		}
+		if(click == 1 ){
+			$(".styleMeterImage").hide();
+			$(".styleMeterImage").attr('src',"/assets/style-meter1.png");
+			//$(".styleMeterImage").css({ marginLeft: '281px'});
+			//$(".styleMeterImage").css({ marginTop: '278px'});
+			$('.rightBtn').show();
+			$(".styleMeterImage").show();
+		}
+		
+		
+	}
+</script>
