@@ -52,6 +52,14 @@ class HomesController < ApplicationController
   end
 
   def download_ringtone
+    track_obj = TrackDownload.first
+    track_obj = TrackDownload.create(mobile_count: nil, web_count: nil) if track_obj.blank?
+    if params[:source].present?
+       track_obj.mobile_count = track_obj.mobile_count.to_i + 1
+    else
+       track_obj.web_count = track_obj.web_count.to_i + 1   
+    end  
+    track_obj.save
     send_file("./public/BuriNazarWale.mp3")
   end
 
