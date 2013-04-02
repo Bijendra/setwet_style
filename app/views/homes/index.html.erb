@@ -8,13 +8,129 @@
   <%= render "layouts/footer.html.erb" %>
 </div>
 
+<div id="popupvideo" style="background: url(/assets/black.png); height: 769px; width: 1024px; position: absolute; top: 0px;">
+	<div style="position: relative; width: 900px; margin: 0 auto; top: 50px;">
+		
+		<img src="/assets/closeBtn.png" style="float: right; cursor: pointer;" onclick="setTimeoutOnClick();" />
+		<div style="clear: both;  " id="main_player"></div>
+	</div>
+</div>
+
+
 <script type="text/javascript">
-  setTimeout(function() {
-    $('#page_1_img_1').slideDown();
-    $('#page_1_img_2').slideDown();
-  }, 3000); 
-  setTimeout(function() {
-    window.scrollTo(0,780)
-  }, 5000); 
-  
+   var tag = document.createElement('script');
+	tag.src = "//www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	 // 3. This function creates an <iframe> (and YouTube player)
+	 //    after the API code downloads.
+	 
+	 var player = '';
+	 function onYouTubeIframeAPIReady() {    
+	     player = new YT.Player('main_player', {
+	     height: '540',
+	     width: '900',
+	     videoId: 'TfpgV-TTnmg',
+	     playerVars: { 'autoplay': 0, 'modestbranding': 1},
+	     events: {
+	       'onReady': onPlayerReady,
+	       'onStateChange': onPlayerStateChange
+	     }
+	   });
+	  // alert(main_player);
+	 } 
+	 // 4. The API will call this function when the video player is ready.
+	 function onPlayerReady(event) {
+	   //event.target.playVideo();
+	 }
+	 // 5. The API calls this function when the player's state changes.
+	 //    The function indicates that when playing a video (state=1),
+	 //    the player should play for six seconds and then stop.
+	 //var done = false;
+	 function onPlayerStateChange(event) {
+	 
+	//alert(event);
+	/*
+	   if (event.data == YT.PlayerState.ENDED || event.data == YT.PlayerState.PAUSED) {
+	     //setTimeout(stopVideo, 6000);
+	     //done = true;
+	      player.setSize(440,275);
+	      document.getElementById("video_end").style.display = "block";
+	      //document.getElementById("video_main").style.display = "none";
+	      document.getElementById("main_player").style.height = "275px";
+		  document.getElementById("main_player").style.width = "440px";
+		  document.getElementById("video_main").style.height = "275px";
+		  document.getElementById("video_main").style.width = "440px";
+		  document.getElementById("video_main").style.marginLeft = "490px";
+		  document.getElementById("video_main").style.marginTop = "70px";
+	     //alert(player.getPlayerState());
+	   }
+	   
+	               
+	   if(event.data == YT.PlayerState.PLAYING){
+	      document.getElementById("video_end").style.display = "none";
+	      document.getElementById("main_player").style.height = "520px";
+	  document.getElementById("main_player").style.width = "970px";
+	      document.getElementById("video_main").style.height = "520px";
+	  document.getElementById("video_main").style.width = "970px";
+	  document.getElementById("video_main").style.marginLeft = "0px";
+	  document.getElementById("video_main").style.marginTop = "0px";
+	  
+	      player.setSize(970,520);
+	   }
+	  */ 
+	}
+	 
+	   function stopVideo() {
+	       player.stopVideo();
+	   }
+   
+    setTimeout(function() {
+	    $('#page_1_img_1').slideDown();
+	    $('#page_1_img_2').slideDown();
+	  }, 3000); 
+	  
+	  
+	  function setTimeoutOnClick(){
+	  	$('#popupvideo').hide();
+	  	player.destroy();
+	  	$('html , body').animate({
+	      scrollTop: 780,
+	    }, 4000); 
+	  }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
