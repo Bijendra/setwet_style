@@ -73,6 +73,9 @@
 	 //var done = false;
 	 function onPlayerStateChange(event) {
 	 
+	 if (event.data == YT.PlayerState.ENDED){
+	 	setTimeoutOnClick();
+	 }
 	//alert(event);
 	/*
 	   if (event.data == YT.PlayerState.ENDED || event.data == YT.PlayerState.PAUSED) {
