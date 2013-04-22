@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+ 
+ <% if controller.action_name == "index" %>
+  <title>
+    Set Wet|Hair Styling Products and Deodorants for Men
+        <% if(false) %>
+        <%= (controller.action_name == "index" || controller.action_name == "home")? "setwet" : controller.action_name.capitalize %>
+        <% end %>
+  </title>
+  <meta property="og:site_name" content="SetWet Styling" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="SetWet | Irresistible style" />
+  <meta property="og:description" content="Set Wet Styling enables you to reach out to one of the most sought after range of international styling products." />
+  <meta property="og:url" content="http://www.setwetstyling.com" />
+  <meta property="og:image" content="http://www.setwetstyling.com/assets/bg_1.jpg" />
+  <meta name="description" content="The perfect way to step out in style with Set Wet's revolutionary range of Waxes, Gels and Deos. Making sure you're always very very sexy."/>
+  <meta name="keywords" content="set wet very very sexy, buri nazar wale, hair style, set wet gel, men's style, latest hairstyle for men, trendy hairstyles for men"/>  
+  
+  <% end %>
+
+<% if controller.action_name == "style_meter" %>
+  <title>
+    Grooming products to match your every need
+        <% if(false) %>
+        <%= (controller.action_name == "index" || controller.action_name == "home")? "setwet" : controller.action_name.capitalize %>
+        <% end %>
+  </title>
+  <meta property="og:site_name" content="SetWet Styling" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="SetWet | Irresistible style" />
+  <meta property="og:description" content="Set Wet Styling enables you to reach out to one of the most sought after range of international styling products." />
+  <meta property="og:url" content="http://www.setwetstyling.com" />
+  <meta property="og:image" content="http://www.setwetstyling.com/assets/bg_1.jpg" />
+  <meta name="description" content="The perfect way to step out in style with Set Wet's revolutionary range of Waxes, Gels and Deos. Making sure you're always very very sexy."/>
+  <meta name="keywords" content="set wet very very sexy, buri nazar wale, hair style, set wet gel, men's style, latest hairstyle for men, trendy hairstyles for men"/>  
+  
+  <% end %>
 
  <% if controller.action_name == "home" %>
   <title>
@@ -24,7 +62,7 @@
   
   <% if controller.action_name == "waxes" %>
   <title>
-    Set Wet Waxes
+    Hair Wax| Breakthrough Innovation in Styling
        
   </title>
   <meta property="og:site_name" content="SetWet Styling" />
@@ -39,9 +77,61 @@
   
   <% end %>
   
+  <% if controller.action_name == "disclaimer" %>
+  <title>
+    Disclaimer
+       
+  </title>
+  <meta property="og:site_name" content="SetWet Styling" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="SetWet | Irresistible style" />
+  <meta property="og:description" content="Set Wet Styling enables you to reach out to one of the most sought after range of international styling products." />
+  <meta property="og:url" content="http://www.setwetstyling.com" />
+  <meta property="og:image" content="http://www.setwetstyling.com/assets/bg_1.jpg" />
+  <meta name="description" content="Complete range of styling waxes for that perfect look. Hold your style and their attention with Set Wet."/>
+  <meta name="keywords" content="set wet wax, after hours wax, shock wave clay, freestyler matt wax, amoeba fibre gum, hair styling wax for men, men wax hair, hair styling wax, hair wax"/>  
+  
+  <% end %>
+  
+  <% if controller.action_name == "contact_us" %>
+  <title>
+    Set Wet|Contact Us
+       
+  </title>
+  <meta property="og:site_name" content="SetWet Styling" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="SetWet | Irresistible style" />
+  <meta property="og:description" content="Set Wet Styling enables you to reach out to one of the most sought after range of international styling products." />
+  <meta property="og:url" content="http://www.setwetstyling.com" />
+  <meta property="og:image" content="http://www.setwetstyling.com/assets/bg_1.jpg" />
+  <meta name="description" content="Complete range of styling waxes for that perfect look. Hold your style and their attention with Set Wet."/>
+  <meta name="keywords" content="set wet wax, after hours wax, shock wave clay, freestyler matt wax, amoeba fibre gum, hair styling wax for men, men wax hair, hair styling wax, hair wax"/>  
+  
+  <% end %>
+
+
+  <% if controller.action_name == "sitemap" %>
+  <title>
+    Sitemap
+       
+  </title>
+  <meta property="og:site_name" content="SetWet Styling" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="SetWet | Irresistible style" />
+  <meta property="og:description" content="Set Wet Styling enables you to reach out to one of the most sought after range of international styling products." />
+  <meta property="og:url" content="http://www.setwetstyling.com" />
+  <meta property="og:image" content="http://www.setwetstyling.com/assets/bg_1.jpg" />
+  <meta name="description" content="Complete range of styling waxes for that perfect look. Hold your style and their attention with Set Wet."/>
+  <meta name="keywords" content="set wet wax, after hours wax, shock wave clay, freestyler matt wax, amoeba fibre gum, hair styling wax for men, men wax hair, hair styling wax, hair wax"/>  
+  
+  <% end %>
+
   <% if controller.action_name == "styles" %>
   <title>
-    Set Wet How to Style
+    Set Wet|How to Style
        
   </title>
   <meta property="og:site_name" content="SetWet Styling" />
@@ -57,7 +147,7 @@
   
   <% if controller.action_name == "deos" %>
   <title>
-    Set Wet Deodorants
+    Deodorants|Enhance your style quotient
        
   </title>
   <meta property="og:site_name" content="SetWet Styling" />
@@ -74,7 +164,7 @@
   
   <% if controller.action_name == "gels" %>
   <title>
-    Set Wet Gels
+    Hair Gel|Irresistible Style
        
   </title>
   <meta property="og:site_name" content="SetWet Styling" />
@@ -90,7 +180,7 @@
 
   <% if controller.action_name == "shop" %>
   <title>
-    Buy Set Wet Online
+    Buy Set Wet Products Online
        
   </title>
   <meta property="og:site_name" content="SetWet Styling" />
@@ -106,7 +196,7 @@
   
    <% if controller.action_name == "faqs" %>
   <title>
-    Set Wet FAQs
+    Set Wet|FAQs
        
   </title>
   <meta property="og:site_name" content="SetWet Styling" />
