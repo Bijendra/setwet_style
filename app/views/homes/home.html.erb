@@ -1,3 +1,13 @@
+<style>
+	#thevideo { 
+	  position: absolute; 
+	  left: 75px;
+	  top: 105px;
+	  z-index: 100;
+	}
+</style>
+
+
 
   <div class="back_ground_waxes">
         
@@ -23,123 +33,111 @@
       <img src="/assets/ringtone.png" style="width:30px;margin-left:55px;" /> 
     </a>
   </div>
-  
-  <div  style='position: absolute; left: 421px; width: 647px;top: 671px; z-index: 10; font-style: italic; font-size: 16px; font-family: setwet; font-weight: bold;'>
+<div  style='position: absolute; left: 421px; width: 647px;top: 669px; z-index: 10; font-style: italic; font-size: 16px; font-family: setwet; font-weight: bold;'>
   	<a onclick="start_video()" style="text-decoration: none; cursor: pointer;" >WATCH THE SET WET RAVE COMMERCIAL HERE</a>
   </div>
-  
-<div id="youtube_video" style="position:absolute;left:879px;top:633px;z-index:10">
-	
+
+<div id="youtube_video" style="position:absolute;left:889px;top:638px;z-index:10">
     <a href="javascript:void(0)" onclick="start_video()"><img src="http://img.youtube.com/vi/UEGFnl9tJ5I/default.jpg" id="deo_video" /> </a>
     </div>
 
-<div id="thevideo1" class="video_container" style="display:none">
+<div id="thevideo" class="video_container" style="display:none">
   
 </div> 
 
 
 <script>
+
+	
+	// 2. This code loads the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = "//www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	
+	// 3. This function creates an <iframe> (and YouTube player)
+	    //    after the API code downloads.
+	    var player;
+	    var flag = 0;
+	    function onYouTubeIframeAPIReady() {
+	      player = new YT.Player('thevideo', {
+	      height: '233',
+	      width: '350',
+	      videoId: 'UEGFnl9tJ5I',
+	      events: {
+	        'onReady': onPlayerReady,
+	        'onStateChange': onPlayerStateChange
+	      }
+	      });
+	    }
+	    
+	    // 4. The API will call this function when the video player is ready.
+	    function onPlayerReady(event) {
+	      if(flag == 1)	
+	      event.target.playVideo();
+	    }
+	   
+	     // 5. The API calls this function when the player's state changes.
+	     //    The function indicates that when playing a video (state=1),
+	     //    the player should play for six seconds and then stop.
+	     var done = false;
+	     function onPlayerStateChange(event) {
+	     if (event.data == YT.PlayerState.PLAYING) {     
+	      document.getElementById('thevideo').style.width = "750px";
+	      document.getElementById('thevideo').style.height = "600px";
+	      document.getElementById('thevideo').style.top = "80px";
+	      document.getElementById('thevideo').style.left = "120px";            
+	    } else if(event.data == YT.PlayerState.PAUSED) {
+	        document.getElementById('thevideo').style.display = "none";
+	        hide_video('hide');  
+	    }
+	     else if(event.data == YT.PlayerState.ENDED){
+	        document.getElementById('thevideo').style.display = "none";
+	        hide_video('hide');
+	     }
+	    }
+	    function stopVideo() {
+	      player.stopVideo();
+	    }
+	
+		
+	$(function(){
+	jQuery('iframe').each(function () {
+	    var url = jQuery(this).attr("src").replace(new RegExp("/v/", "i"), '/embed/');
+	    if (jQuery(this).attr("src").indexOf("?") > 0) {
+	        jQuery(this).attr("src", url + "&amp;wmode=opaque");
+	    }
+	});
+	});
+</script>
+
+<script type='text/javascript'>
 	function start_video(){
-	flag = 1;
-	//document.getElementById("deo_bg").style.display = "none";
-	//document.getElementById("deo_bg2").style.display = "block";
-	//document.getElementById("deo_main_div").style.display = "none";
-	//document.getElementById("deo_text").style.display = "none";
+		flag = 1;
+	
 	document.getElementById("youtube_video").style.display = "none";
 	// $("#btn_cross").css("display","block");
-	$("#thevideo1").css("display","block");
+	$("#thevideo").css("display","block");
 	onYouTubeIframeAPIReady();
-	document.getElementById('thevideo1').style.width = "750px";
-	document.getElementById('thevideo1').style.height = "600px";
+	document.getElementById('thevideo').style.width = "750px";
+	document.getElementById('thevideo').style.height = "600px";
 	}
 	
 	function hide_video(state){
-	 var div = document.getElementById("thevideo1");
+	 var div = document.getElementById("thevideo");
 	   //var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
 	   div.style.display = state == 'hide' ? 'none' : '';
 	   func = state == 'hide' ? 'pauseVideo' : 'playVideo';
 	   //iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
 	   //  $("#btn_cross").css("display","none");
-	document.getElementById("deo_main_div").style.display = "";
-	document.getElementById("deo_text").style.display = "";
+	//document.getElementById("deo_main_div").style.display = "";
+	//document.getElementById("deo_text").style.display = "";
 	document.getElementById("youtube_video").style.display = "";
-	document.getElementById("deo_bg").style.display = "";
-	document.getElementById("deo_bg2").style.display = "none";
+	//document.getElementById("deo_bg").style.display = "";
+	//document.getElementById("deo_bg2").style.display = "none";
 	}
 	
+
+
 </script>
 
-<style>
-	#thevideo1 { 
-	  position: absolute; 
-	  left: 75px;
-	  top: 105px;
-	  z-index: 100;
-	}
-</style>
-
-
-<script>
-
-
-// 2. This code loads the IFrame Player API code asynchronously.
-var tag = document.createElement('script');
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    var player;
-    var flag = 0;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('thevideo1', {
-      height: '233',
-      width: '350',
-      videoId: 'UEGFnl9tJ5I',
-      events: {
-        'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
-      }
-      });
-    }
-    
-    // 4. The API will call this function when the video player is ready.
-    function onPlayerReady(event) {
-      if(flag == 1)	
-      event.target.playVideo();
-    }
-   
-     // 5. The API calls this function when the player's state changes.
-     //    The function indicates that when playing a video (state=1),
-     //    the player should play for six seconds and then stop.
-     var done = false;
-     function onPlayerStateChange(event) {
-     if (event.data == YT.PlayerState.PLAYING) {     
-      document.getElementById('thevideo1').style.width = "750px";
-      document.getElementById('thevideo1').style.height = "600px";
-      document.getElementById('thevideo1').style.top = "80px";
-      document.getElementById('thevideo1').style.left = "120px";            
-    } else if(event.data == YT.PlayerState.PAUSED) {
-        document.getElementById('thevideo1').style.display = "none";
-        hide_video('hide');  
-    }
-     else if(event.data == YT.PlayerState.ENDED){
-        document.getElementById('thevideo1').style.display = "none";
-        hide_video('hide');
-     }
-    }
-    function stopVideo() {
-      player.stopVideo();
-    }
-
-	
-$(function(){
-jQuery('iframe').each(function () {
-    var url = jQuery(this).attr("src").replace(new RegExp("/v/", "i"), '/embed/');
-    if (jQuery(this).attr("src").indexOf("?") > 0) {
-        jQuery(this).attr("src", url + "&amp;wmode=opaque");
-    }
-});
-});
-</script>
