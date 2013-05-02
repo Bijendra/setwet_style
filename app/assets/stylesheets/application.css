@@ -121,11 +121,11 @@ body {
 }
 
 #sitemap {
-    position:absolute;
-    top: 735px;
-    right:1px;
-    width: 650px;
-    height: 30px;
+    position: absolute;
+	top: 735px;
+	right: 1px;
+	width: 650px;
+	height: 30px;
 }
 
 #sitemap a {
@@ -167,10 +167,10 @@ body {
 }
 
 .back_ground_waxes {
-	background-image:url('wax_home_bg.jpg');
+	background-image:url('bg1.jpg');
     background-color:#cccccc;
     width: 1024px;
-    height: 768px;
+    height: 1000px;
 }
 
 .back_ground_waxes_range {
@@ -193,7 +193,7 @@ body {
 
 .setwet_logo_position {
     float: right;
-    padding-top: 291px;
+    padding-top: 329px;
 }
 
 .setwet_range_position {
