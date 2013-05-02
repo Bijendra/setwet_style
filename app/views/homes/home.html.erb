@@ -1,18 +1,27 @@
 <style>
 	#thevideo { 
 	  position: absolute; 
-	  left: 75px;
-	  top: 105px;
+	  left: 120px;
+	  top: 300px;
 	  z-index: 100;
 	}
+	
+	#sitemap {
+	    position:absolute !important; 
+	    top: 976px !important;
+	    left: 434px !important;
+	    width: 650px !important;
+	    height: 30px !important;
+}
+	
 </style>
 
 
 
   <div class="back_ground_waxes">
         
-    <div class="wax_link_styling" style='position:absolute;left:365px;top:540px;z-index:auto;font-size:16px'>      
-      SO, GO ON,GET VERY VERY SEXY.&nbsp;<%= link_to "CLICK HERE", "/howto" , html_options = {:class => "wax_link_styling"} %>
+    <div class="wax_link_styling" style='position:absolute;left:722px;top:575px;z-index:auto;font-size:16px'>      
+    <%= link_to "CLICK HERE", "/howto" , html_options = {:class => "wax_link_styling"} %>
     </div>
     <div id="links">
     	<%= render "links" %>
@@ -27,19 +36,42 @@
     </a>
 
 
-   <div  style="position:absolute;left:420px;width:647px;top:581px;z-index:10;font-style: italic;font-size:16px;font-family:setwet;font-weight:bold;">
+   <div  style="position:absolute;left:420px;width:647px;top:629px;z-index:10;font-style: italic;font-size:16px;font-family:setwet;font-weight:bold;">
     <a href="/download_ringtone" style="text-decoration:none;">
       DOWNLOAD THE "BURI NAZAR WALE" RINGTONE HERE
       <img src="/assets/ringtone.png" style="width:30px;margin-left:55px;" /> 
     </a>
   </div>
-<div  style='position: absolute; left: 421px; width: 647px;top: 669px; z-index: 10; font-style: italic; font-size: 16px; font-family: setwet; font-weight: bold;'>
-  	<a onclick="start_video()" style="text-decoration: none; cursor: pointer;" >WATCH THE SET WET RAVE COMMERCIAL HERE</a>
+<div id="raveID"  style='position: absolute; left: 421px; width: 647px;top: 732px; z-index: 10; font-style: italic; font-size: 16px; font-family: setwet; font-weight: bold;'>
+  	<a onclick="start_video('UEGFnl9tJ5I')" style="text-decoration: none; cursor: pointer;" >WATCH THE SET WET RAVE COMMERCIAL HERE</a>
+  </div>
+  
+  <div id="biteID"  style='position: absolute; left: 421px; width: 647px;top: 825px; z-index: 10; font-style: italic; font-size: 16px; font-family: setwet; font-weight: bold;'>
+  	<a onclick="start_video('WmB82ep8rgE')" style="text-decoration: none; cursor: pointer;" >WATCH THE SET WET BITE COMMERCIAL HERE</a>
   </div>
 
-<div id="youtube_video" style="position:absolute;left:889px;top:638px;z-index:10">
-    <a href="javascript:void(0)" onclick="start_video()"><img src="http://img.youtube.com/vi/UEGFnl9tJ5I/default.jpg" id="deo_video" /> </a>
+<div id="coolID"  style='position: absolute; left: 421px; width: 647px;top: 915px; z-index: 10; font-style: italic; font-size: 16px; font-family: setwet; font-weight: bold;'>
+  	<a onclick="start_video('jyiBE9_Joeg')" style="text-decoration: none; cursor: pointer;" >WATCH THE SET WET COOL COMMERCIAL HERE</a>
+  </div>
+
+
+<div id="youtube_video" style="position:absolute;left:889px;top:695px;z-index:10">
+    <a href="javascript:void(0)" onclick="start_video('UEGFnl9tJ5I')"><img src="http://img.youtube.com/vi/UEGFnl9tJ5I/default.jpg" id="deo_video" /> </a>
     </div>
+
+<div id="youtube_video1" style="position:absolute;left:889px;top:788px;z-index:10">
+    <a href="javascript:void(0)" onclick="start_video('WmB82ep8rgE')"><img src="http://img.youtube.com/vi/WmB82ep8rgE/default.jpg" id="deo_video1" /> </a>
+    </div>
+
+<div id="youtube_video2" style="position:absolute;left:889px;top:881px;z-index:10">
+    <a href="javascript:void(0)" onclick="start_video('jyiBE9_Joeg')"><img src="http://img.youtube.com/vi/jyiBE9_Joeg/default.jpg" id="deo_video2" /> </a>
+    </div>
+
+
+
+
+
+
 
 <div id="thevideo" class="video_container" style="display:none">
   
@@ -60,11 +92,12 @@
 	    //    after the API code downloads.
 	    var player;
 	    var flag = 0;
-	    function onYouTubeIframeAPIReady() {
+	    function onYouTubeIframeAPIReady(id) {
+	    	console.log(id);
 	      player = new YT.Player('thevideo', {
 	      height: '233',
 	      width: '350',
-	      videoId: 'UEGFnl9tJ5I',
+	      videoId: id.toString(),
 	      events: {
 	        'onReady': onPlayerReady,
 	        'onStateChange': onPlayerStateChange
@@ -86,15 +119,19 @@
 	     if (event.data == YT.PlayerState.PLAYING) {     
 	      document.getElementById('thevideo').style.width = "750px";
 	      document.getElementById('thevideo').style.height = "600px";
-	      document.getElementById('thevideo').style.top = "80px";
+	      document.getElementById('thevideo').style.top = "300px";
 	      document.getElementById('thevideo').style.left = "120px";            
 	    } else if(event.data == YT.PlayerState.PAUSED) {
 	        document.getElementById('thevideo').style.display = "none";
-	        hide_video('hide');  
+	        hide_video('hide');
+	        stopVideo();
+	        player.destroy();
 	    }
 	     else if(event.data == YT.PlayerState.ENDED){
 	        document.getElementById('thevideo').style.display = "none";
 	        hide_video('hide');
+	        stopVideo();
+	        player.destroy();
 	     }
 	    }
 	    function stopVideo() {
@@ -113,19 +150,20 @@
 </script>
 
 <script type='text/javascript'>
-	function start_video(){
+	function start_video(id){
 
 	flag = 1;
-  console.log("start video");
-	//document.getElementById("deo_bg").style.display = "none";
-	//document.getElementById("deo_bg2").style.display = "block";
-	//document.getElementById("deo_main_div").style.display = "none";
-	//document.getElementById("deo_text").style.display = "none";
-
+  	console.log("start video");
 	document.getElementById("youtube_video").style.display = "none";
+	document.getElementById("youtube_video1").style.display = "none";
+	document.getElementById("youtube_video2").style.display = "none";
+	document.getElementById("raveID").style.display = "none";
+	document.getElementById("biteID").style.display = "none";
+	document.getElementById("coolID").style.display = "none";
+	
 	// $("#btn_cross").css("display","block");
 	$("#thevideo").css("display","block");
-	onYouTubeIframeAPIReady();
+	onYouTubeIframeAPIReady(id);
 	document.getElementById('thevideo').style.width = "750px";
 	document.getElementById('thevideo').style.height = "600px";
 	}
@@ -137,11 +175,13 @@
 	   func = state == 'hide' ? 'pauseVideo' : 'playVideo';
 	   //iframe.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
 	   //  $("#btn_cross").css("display","none");
-	//document.getElementById("deo_main_div").style.display = "";
-	//document.getElementById("deo_text").style.display = "";
 	document.getElementById("youtube_video").style.display = "";
-	//document.getElementById("deo_bg").style.display = "";
-	//document.getElementById("deo_bg2").style.display = "none";
+	document.getElementById("youtube_video1").style.display = "";
+	document.getElementById("youtube_video2").style.display = "";
+	document.getElementById("raveID").style.display = "";
+	document.getElementById("biteID").style.display = "";
+	document.getElementById("coolID").style.display = "";
+	
 	}
 	
 
